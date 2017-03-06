@@ -1,0 +1,46 @@
+import Ractive from 'ractive';
+
+import { DevicesTableComponent } from './devices-table.component';
+
+import { StateContainerService } from '../../services/state-container.service';
+
+
+export function PageComponent() {             
+    
+    let ractive: IRactive = undefined;
+
+    const stateContainer = StateContainerService();
+
+    const devicesTable= DevicesTableComponent();
+    
+    const ractiveData = {
+        el: undefined,
+        template: `            
+            <div id="devices-table">
+            </div>
+        `
+    };
+    
+    function init(elem,resolve) {
+        console.log("<page-devices>");
+        ractiveData.el = elem;
+        ractive = new Ractive(ractiveData);
+        
+        //TODO
+        resolve(1);
+
+        devicesTable.init('#devices-table');
+        
+        console.log("</page-devices>");
+    }
+    
+    function clean() {
+        devicesTable.clean();
+        ractive.teardown();
+    }
+    
+    return {
+        init,
+        clean
+    };
+}

@@ -1,0 +1,166 @@
+@mixin table-with-theme($bgColor, $textColor, $lineColor){
+  border-bottom: 2px solid $lineColor;
+  tbody{
+  /*  overflow-y: scroll;
+    display: list-item;
+    height: calc(100% - 35px);*/
+  }
+  thead > tr > th{
+    border-color: $lineColor;
+    color: $bgDarkBlue;
+    font-weight: normal;
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  tbody > tr{
+    color: $textDarkGray;
+    a{
+      color: $textColor;
+      &:hover, &:active{
+        color: $lineColor;
+      }
+    }
+    &.clickable{
+      background: #f9f9F9; //rgba($textColor, 0.1);
+      color: $bgDarkBlue;
+      font-weight: bold;
+      &:hover{
+        background: rgba($textColor, 0.2);
+      }
+      td:first-of-type{
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+    }
+    td, th{
+      line-height: 24px;
+      font-size: 12px;
+      padding: 3px 8px 3px 20px;
+      button{
+        background: $lineColor;
+        margin-top: 3px;
+        height: 24px;
+        line-height: 12px;
+        font-size: 12px;
+        padding: 6px 10px;
+        color: $textWhite;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+        border-radius: 3px;
+        &:hover, &:focus{
+          outline: none;
+          background: $bgColor;
+        }
+      }
+      input{
+        -webkit-appearance: none;
+        @include transition-intent();
+        border: none;
+        height: 24px;
+        border-bottom: 2px solid $lineColor;
+        color: $bgColor;
+        width: 100%;
+        
+        &:focus{
+          outline: none;
+        }
+      }
+      div {
+        &.input-signal {
+           max-width: 100px;
+          .editable{
+            display: block;
+            border-bottom: 2px solid $lineGray;
+            width: 100%;
+            }
+        }
+        &.data-bar {
+          display: inline-block;
+            width: 60%;
+            height: 10px;
+            background-color: $bgWhite;
+            overflow: hidden;
+            border-radius: 8px;
+            float: right;
+            margin-top: 7px;
+            border: 1px solid $lineLightGray;
+            span{
+              display: inline-block;
+              height: 100%;
+              // width: 50%;
+              // background-color: $successGreen;
+              @include transition-slow();
+            }
+        }
+      }
+      &.signal-bad-quality{
+        background: $bgMiddleGray;
+        color: $textMiddleGray;
+      }
+      &.alert-danger{
+        background-color: $errorRed;
+        color: white;
+      }
+      &.alert-warning{
+        background-color: $warningYellow;
+        color: white;
+      }
+      &.alerts-table-cell{
+        padding: 0px;
+        .alert-cell{
+          padding: 5px;
+          .setpoint-motive{
+            height: 20px;
+            width: 20px;
+            font-size: 12px;
+            line-height: 16px;
+            border: 2px solid $textDarkGray;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+          }
+          .icon{
+            font-size: 18px;
+            line-height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .time-remain{
+            float: right;
+            font-size: 13px;
+            font-weight: bold;
+          }
+          &.alert-error{
+            color: $errorRed;
+            background: none;
+            .setpoint-motive{
+              border-color: $errorRed;
+            }
+          }
+          &.alert-danger{
+            color: $dangerOrange;
+            background: none;
+            .setpoint-motive{
+              border-color: $dangerOrange;
+            }
+          }
+          &.alert-warning{
+            color: $warningYellow;
+            background: none;
+            .setpoint-motive{
+              border-color: $warningYellow;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.table-striped{
+    tbody{
+      tr:nth-of-type(odd){
+        background: rgba($textColor, 0.1);
+      }
+    }
+  }
+}

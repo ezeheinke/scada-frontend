@@ -1,0 +1,102 @@
+#main-view{
+  &.theme-maintainer{
+    #page-tabs{
+      @include page-tabs-with-themes($bgDarkPurple, rgba($textLightPurple,1));
+    }
+  }
+  &.theme-operator{
+    #page-tabs{
+      @include page-tabs-with-themes($bgDarkBlue, rgba($infoBlue, 1));
+    }
+  }
+  &.theme-owner{
+    #page-tabs{
+      @include page-tabs-with-themes($bgDarkGreen, rgba($textLightGreen, 1));
+    }
+  }
+  &.theme-admin{
+    #page-tabs{
+      @include page-tabs-with-themes($themeGreen, rgba($lineLightGreen  , 1));
+    }
+  }
+  // #users-main{
+  //   #page-tabs{
+  //     #back-button{
+  //       color: $textWhite;
+  //       background: $successGreen;
+  //       font-weight: 700;
+  //       @include transition-intent();
+  //       &:hover, &:active{
+  //         background: darken($successGreen, 10%);
+  //         border-color: transparent;
+  //       }
+  //     }
+  //     @include page-tabs-with-themes($successGreen, $bgGray);
+  //   }
+  // }
+}
+
+#system-control{
+  position: fixed;
+  height: 42px;
+  right: 10px;
+  top: 0px;
+  @media(max-width: 767px){
+    right: 0px;
+  }
+  .system-control-icon-wrapper{
+    height: 42px;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 10px 10px 8px 10px;
+    color: $textWhite;
+    display: inline-block;
+    vertical-align: middle;
+    button{
+      border: none;
+      background: none;
+      padding: 0px;
+    }
+    &#user-name-wrapper{
+      .username-text{
+        display: inline-block;
+        margin-top: -5px;
+        text-transform: uppercase;
+      }
+      @media(max-width: 767px){
+        display: none;
+      }
+    }
+    .system-control-icon{
+      position: relative;
+      .icon{
+        font-size: 22px;
+        display: inline-block;
+        width: 22px;
+      }
+      .notification-flag {
+        position: absolute;
+        display: block;
+        top: -30px;
+        right: -6px;
+        width: 10px;
+        height: 10px;
+        border: 1.5px solid $textWhite;
+        border-radius: 18px;
+        &.important{
+          background-color: $errorRed;
+          width: 18px;
+          height: 18px;
+          font-size: 11px;
+          color: $textWhite;
+          line-height: 18px;
+          text-align: center;
+          font-weight: 600;
+        }
+        &.not-important{
+          background-color: $dangerOrange;
+        }
+      }
+    }
+  }
+}

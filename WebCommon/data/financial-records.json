@@ -1,0 +1,110 @@
+[
+  {
+    "date": "01/2016",    
+    "energy": 80,
+    "estimatedEnergy": 100,
+    "price": 10,
+    "income": 40,
+    "estimatedIncome": 10,
+    "penalties": 0
+  },
+  {
+    "date": "02/2016",    
+    "energy": 90,
+    "estimatedEnergy": 100,
+    "price": 12,
+    "income": 45,
+    "estimatedIncome": 7,
+    "penalties": 1
+  },
+  {
+    "date": "03/2016",    
+    "energy": 90,
+    "estimatedEnergy": 120,
+    "price": 12,
+    "income": 43,
+    "estimatedIncome": 20,
+    "penalties": 1
+  },
+  {
+    "date": "04/2016",    
+    "energy": 90,
+    "estimatedEnergy": 130,
+    "price": 11,
+    "income": 47,
+    "estimatedIncome": 10,
+    "penalties": 0
+  },
+  {
+    "date": "05/2016",    
+    "energy": 95,
+    "estimatedEnergy": 100,
+    "price": 9,
+    "income": 46,
+    "estimatedIncome": 20,
+    "penalties": 0
+  },
+  {
+    "date": "06/2016",    
+    "energy":110,
+    "estimatedEnergy": 80,
+    "price": 8,
+    "income": 53,
+    "estimatedIncome": 40,
+    "penalties": 2
+  },
+  {
+    "date": "07/2016",    
+    "energy":95,
+    "estimatedEnergy": 82,
+    "price": 5,
+    "income": 45,
+    "estimatedIncome": 38,
+    "penalties": 4
+  },
+  {
+    "date": "08/2016",    
+    "energy": 97,
+    "estimatedEnergy": 82,
+    "price": 6,
+    "income": 46,
+    "estimatedIncome": 45,
+    "penalties": 1
+  },
+  {
+    "date": "09/2016",    
+    "energy": 97,
+    "estimatedEnergy": 82,
+    "price": 9,
+    "income": 45,
+    "estimatedIncome": 12,
+    "penalties": 0
+  },
+  {
+    "date": "10/2016",    
+    "energy": 95,
+    "estimatedEnergy": 82,
+    "price": 11,
+    "income": 44,
+    "estimatedIncome": 14,
+    "penalties": 0
+  },
+  {
+    "date": "11/2016",    
+    "energy": 100,
+    "estimatedEnergy": 74,
+    "price": 14,
+    "income": 50,
+    "estimatedIncome": 19,
+    "penalties": 0
+  },
+  {
+    "date": "12/2016",    
+    "energy": 110,
+    "estimatedEnergy": 74,
+    "price": 18,
+    "income": 55,
+    "estimatedIncome": 9,
+    "penalties": 1
+  }
+]

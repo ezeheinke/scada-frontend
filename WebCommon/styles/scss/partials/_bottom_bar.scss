@@ -1,0 +1,22 @@
+#main-view{
+  &.theme-maintainer{
+    .bottom-tab-bar{
+      @include bottom-tab-bar-with-theme($bgDarkPurple, $lineLightPurple);
+   }
+  }
+  &.theme-operator{
+    .bottom-tab-bar{
+      @include bottom-tab-bar-with-theme($bgDarkBlue, $lineLightBlue);
+   }
+  }
+  &.theme-owner{
+    .bottom-tab-bar{
+      @include bottom-tab-bar-with-theme($bgDarkGreen, $lineLightGreen);
+   }
+  }
+  &.theme-admin{
+    .bottom-tab-bar{
+      @include bottom-tab-bar-with-theme($themeDarkGreen, $themeGreen);
+   }
+  }
+}

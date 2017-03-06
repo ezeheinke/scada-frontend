@@ -1,0 +1,154 @@
+@mixin bottom-tab-bar-with-theme($bgColor, $lineColor){
+  background-color: rgba($bgWhite, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid $lineGray;
+  height: 50px;
+  position: fixed;
+  z-index: 1000;
+  width: 75%;
+  bottom: 0px;
+  text-align: center;
+  @media(max-width: 1279px) and (min-width: 992px){
+    width: 66.67%;
+  }
+  @media(max-width: 991px){
+    width: 100%;
+  }
+  .bottom-tab-button{
+    background: none;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px;
+    border: none;
+    width: 100px;
+    color: $textMiddleGray;
+    span{
+      margin-top: 2px;
+      font-size: 24px;
+      display: block;
+      line-height: 28px;
+    }
+    &.active{
+      color: $bgColor;
+      font-weight: 700;
+    }
+  }
+  &.responsive-large{
+    text-align: left;
+    .bottom-filter-wrapper{
+      display: inline-block;
+      padding: 10px 10px 0px 10px;
+      label{
+        text-transform: uppercase;
+        color: $lineColor;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        vertical-align: middle;
+        line-height: 30px;
+      }
+      input[type="text"], input[type="password"]{
+        border: none;
+        border-bottom: 2px solid $lineGray;
+        font-weight: 400;
+        height: 30px;
+        width: 100px;
+        @include transition-intent();
+        &:focus{
+          outline: none;
+          border-color: $lineColor;
+          color: $bgColor;
+          font-weight: 700;
+        }
+      }
+      select{
+        color: $textDarkGray;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid $lineGray;
+        font-weight: 400;
+        height: 30px;
+        &:focus{
+          outline: none;
+          border-color: $lineColor;
+          color: $bgColor;
+          font-weight: 700;
+        }
+      }
+      @media(max-width: 767px){
+        width: 100%;
+        input[type="text"], input[type="password"], select{
+          display: block;
+          width: 100%;
+        }
+      }
+      @media(max-width: 1169px){
+        label{
+          display: none;
+        }
+      }
+    }
+    .bottom-filter-button-wrapper{
+      display: inline-block;
+      float: right;
+      padding: 10px;
+      line-height: 0px;
+      font-size: 0px;
+      button{
+        margin-top: 3px;
+        height: 30px;
+        line-height: 18px;
+        font-size: 14px;
+        padding: 6px 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: none;
+        border-radius: 3px;
+        margin: 0px;
+        vertical-align: middle;
+        color: $textWhite;
+        background: $lineColor;
+        @include transition-intent();
+        &:hover, &:focus{
+          outline: none;
+          color: $textWhite;
+          background: $bgColor;
+        }
+        &.primary-button{
+          background: $themeGreen;
+          &:hover, &:focus{
+            background: $themeDarkGreen;
+          }
+        }
+        i{
+          font-size: 16px;
+          vertical-align: middle;
+        }
+        &:not(:last-of-type){
+          margin-right: 5px;
+        }
+      }
+    }
+    @media(max-width: 767px){
+      height: auto;
+      margin-top: 10px;
+      .bottom-filter-button-wrapper{
+        width: 100%;
+        text-align: right;
+        float: none;
+        button{
+          background: none;
+          color: $lineColor;
+          &.primary-button{
+            background: none;
+          }
+          i{
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}

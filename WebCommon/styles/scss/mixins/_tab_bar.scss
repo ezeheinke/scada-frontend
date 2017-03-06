@@ -1,0 +1,57 @@
+@mixin page-tabs-with-themes($themeColor, $bgColor){
+  background-color: $bgColor;
+  height: 42px;
+  li{
+    a{
+      height: 42px;
+      margin: 0px;
+      line-height: 30px;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 0px;
+      padding: 4px 20px 10px 20px;
+      color: $textWhite;
+      @include transition-intent();
+      i{
+        font-size: 14px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      span{
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+      @media(max-width: 767px){
+        padding: 4px 10px 10px 10px;
+        i{
+          font-size: 24px;
+          margin-top: 3px;
+        }
+        span{
+          display: none;
+        }
+      }
+      &:hover, &:active{
+        color: $textWhite;
+        background: $themeColor;
+        border-color: $themeColor;
+      }
+      }
+    &:first-of-type{
+      a{
+        border-left: 1px solid $lineGray;
+      }
+    }
+    &.active{
+      a, a:link, a:hover, a:active, a:visited{
+        border-top: none;
+        color: $textMiddleGray;
+      }
+      a:hover{
+        color: $textWhite;
+      }
+    }
+  }
+}

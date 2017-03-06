@@ -1,0 +1,242 @@
+[
+  {
+    "date": "12/06/2016 00:00",
+    "dailyPrice": 4,
+    "intradailyPrice": 3,
+    "estimatedEnergy": 70,
+    "energy": 50,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 01:00",
+    "dailyPrice": 4,
+    "intradailyPrice": 3,
+    "estimatedEnergy": 70,
+    "energy": 50,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 02:00",
+    "dailyPrice": 4,
+    "intradailyPrice": 3,
+    "estimatedEnergy": 70,
+    "energy": 50,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 03:00",
+    "dailyPrice": 4,
+    "intradailyPrice": 3,
+    "estimatedEnergy": 70,
+    "energy": 100,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 04:00",
+    "dailyPrice": 10,
+    "intradailyPrice": 3,
+    "estimatedEnergy": 70,
+    "energy": 100,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 05:00",
+    "dailyPrice": 10,
+    "intradailyPrice": 3,
+    "estimatedEnergy": 100,
+    "energy": 100,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 06:00",
+    "dailyPrice": 10,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 100,
+    "energy": 100,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 07:00",
+    "dailyPrice": 6,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 100,
+    "energy": 100,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 08:00",
+    "dailyPrice": 6,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 90,
+    "energy": 120,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 09:00",
+    "dailyPrice": 6,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 90,
+    "energy": 110,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 10:00",
+    "dailyPrice": 6,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 90,
+    "energy": 100,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 11:00",
+    "dailyPrice": 6,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 90,
+    "energy": 100,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 12:00",
+    "dailyPrice": 6,
+    "intradailyPrice": 7,
+    "estimatedEnergy": 80,
+    "energy": 75,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 13:00",
+    "dailyPrice": 10,
+    "intradailyPrice": 7,
+    "estimatedEnergy": 100,
+    "energy": 75,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 14:00",
+    "dailyPrice": 10,
+    "intradailyPrice": 7,
+    "estimatedEnergy": 100,
+    "energy": 75,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 15:00",
+    "dailyPrice": 10,
+    "intradailyPrice": 7,
+    "estimatedEnergy": 70,
+    "energy": 75,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 16:00",
+    "dailyPrice": 7,
+    "intradailyPrice": 7,
+    "estimatedEnergy": 70,
+    "energy": 75,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 17:00",
+    "dailyPrice": 7,
+    "intradailyPrice": 7,
+    "estimatedEnergy": 70,
+    "energy": 75,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 18:00",
+    "dailyPrice": 7,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 100,
+    "energy": 30,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 19:00",
+    "dailyPrice": 10,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 100,
+    "energy": 30,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 20:00",
+    "dailyPrice": 10,
+    "intradailyPrice": 10,
+    "estimatedEnergy": 50,
+    "energy": 30,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 21:00",
+    "dailyPrice": 9,
+    "intradailyPrice": 8,
+    "estimatedEnergy": 50,
+    "energy": 30,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 22:00",
+    "dailyPrice": 9,
+    "intradailyPrice": 8,
+    "estimatedEnergy": 50,
+    "energy": 30,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  },
+  {
+    "date": "12/06/2016 23:00",
+    "dailyPrice": 9,
+    "intradailyPrice": 8,
+    "estimatedEnergy": 50,
+    "energy": 75,
+    "cosPhi": 1.1,
+    "maxCosPhi": 1.43,
+    "minCosPhi": 0.76
+  }  
+]

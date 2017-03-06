@@ -1,0 +1,343 @@
+﻿{
+    "rootView": "CCR",
+    "serverPath": "",
+    "views": {
+        "CCR": {
+            "id": "CCR",
+            "viewLevel": "CCR",
+            "name": "GJORGE CCR",            
+            "pages": {
+                 "admin": [
+                    {"id": "users", "name": "Users", "pageFile": "page-users", "icon": "icon dripicons-user-group"},
+                    {"id": "item-viewer", "name": "Item Viewer", "pageFile": "page-item-viewer", "icon": "icon dripicons-preview"}
+                ],
+                 "maintainer": [
+                    {"id": "reports", "name": "Reports", "pageFile": "page-reports-temp", "icon": "icon dripicons-inbox"}                    
+                ],
+                "operator": [
+                    {"id": "assets", "name": "Assets", "pageFile": "page-assets", "icon": "icon dripicons-network-3"},
+                    {"id": "events", "name": "Events", "pageFile": "page-events", "icon": "icon dripicons-view-list"},
+                    {"id": "reports", "name": "Reports", "pageFile": "page-reports-temp", "icon": "icon dripicons-inbox"},
+                    {"id": "map", "name": "Map", "pageFile": "page-map", "icon": "icon dripicons-map"}
+                ],
+                "owner": [
+                    {"id": "budget", "name": "Budget", "pageFile": "page-budget", "icon": "icon dripicons-wallet"}
+                ]
+            },
+            "pagesData": {
+                "assets": {                    
+                    "tables": [{
+                        "name": "REE",
+                        "icon": "icon dripicons-swap", 
+                        "signals": [
+                            {"name": "Active Power (MW)", "signalName": "ActivePower", "multiply": 0.001, "decimals": 2,
+								"nodeSumatory": true,"showBar":true,"additionalInfo":"SetpointReceived"},
+                            {"name": "Reactive Power (MVAr)", "signalName": "ReactivePower", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true},
+                            {"name": "Voltage (kV)", "signalName": "VoltageR", "multiply": 1, "decimals": 2,
+                                 "nodeSumatory": false},     
+                            {"name": "Producible Power (MW)", "signalName": "ProduciblePower", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true},
+                            {"name": "Energy (kWh)", "signalName": "Energy","multiply": 0.001, "decimals": 2, "nodeSumatory": true}                           
+                        ]
+                    },{
+                        "name": "Control",
+                        "icon": "icon dripicons-meter", 
+                        "signals": [
+                            {"name": "Active P. (MW)", "signalName": "ActivePower", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true,"showBar":true},
+                            {"name": "SP Received (MW)", "signalName": "SetpointReceived", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true,"excludeQualityStyle":true},
+                            {"name": "SP Order (MW)","signalName": "SetpointReceived", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": false,"needControlPrivilege":true, "inputSignal":true, "writeSignal":"SetpointRequest","units":"MW"},                                    
+                            {"name": "SP Applied (MW)", "signalName": "SetpointApplied", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true,"excludeQualityStyle":true}
+                        ]
+                    },{
+                        "name": "Meteo",
+                        "icon": "icon dripicons-cloud", 
+                        "signals": [
+                                {"name": "Wind Speed (m/s)", "signalName": "WindSpeed", "decimals": 2, "nodeAverage": true},
+                                {"name": "Wind Direction (º)", "signalName": "WindDirection", "decimals": 0},
+                                {"name": "Temperature (ºC)", "signalName": "Temperature", "decimals": 1, "nodeAverage": true}
+                        ]
+                    }]
+                }
+            },
+            "map": {
+                "signals": [
+                    {"name": "Active P. (MW)", "signalName": "ActivePower", "decimals": 2,"multiply": 0.001},
+                    {"name": "Wind Speed (m/s)", "signalName": "WindSpeed", "decimals": 0},
+                    {"name": "SP Applied (MW)", "signalName": "SetpointApplied", "multiply": 0.001, "decimals": 2}
+                ]
+            }
+        },
+        "PARK_Coscojar": "default", 
+		"PARK_Aguila": {
+                            "id": "PARK_Aguila",
+                            "name": "PE Águila",
+                            "viewLevel": "ASSET",
+                            "pages": {
+                                "admin":[
+                                    {"id": "item-viewer", "name": "Item Viewer", "pageFile": "page-item-viewer", "icon": "icon dripicons-preview"}
+                                ],
+                                "maintainer": [
+                                    {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"}
+                                ],
+                                "operator": [
+                                    {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"},
+                                    {"id": "control", "name": "Overview", "pageFile": "page-control",  "icon": "icon dripicons-toggles"},
+                                    {"id": "wtg", "name": "WTG", "pageFile": "page-devices",  "icon": "icon dripicons-retweet", "deviceType": "Nordex"}                                                             
+                                ],
+                                "owner": [
+                                ]
+                            },
+                            "pagesData": {
+                                "control": {
+                                    "productionGraph": {                    
+                                        "graphSignals": [
+                                            {"name": "Active Power", "signalName": "ActivePower", "multiply": 0.001, "units": "MW"},
+                                            {"name": "SP. Applied", "signalName": "SetpointApplied", "multiply": 0.001, "units": "MW"},
+                                            {"name": "Rated Power", "signalName": "NominalPower", "multiply": 0.001, "units": "MW"},
+                                            {"name": "SP. REE", "signalName": "CECOELSetpointReceived", "multiply": 0.001, "units": "MW"},
+                                            {"name": "WindSpeed", "yAxis": "right", "signalName": "WindSpeed", "units": "m/s"}                                                
+                                        ]
+                                    },
+                                    "powerFactorGraph": {                    
+                                        "graphSignals": [
+                                            {"name": "Cos. phi", "signalName": "CosPhi", "drawPoints": true}
+                                        ],
+                                        "marks": [
+                                            {"name": "Cos. phi Max", "value":0.98},
+                                            {"name": "Cos. phi Min", "value": -0.98}
+                                        ]
+                                    },
+                                    "writeSignals": [
+                                    ],
+                                    "displaySignals": [
+                                        [
+                                            {"name": "Setpoint Applied", "signalName": "SetpointApplied", "units": "kW"},
+                                            {"name": "Setpoint Received", "signalName": "SetpointReceived", "units": "kW"},
+                                            {"name": "Rated Active Power", "signalName": "NominalPower", "units": "kW"},
+                                            {"name": "Active Power", "signalName": "ActivePower", "units": "kW"},
+                                            {"name": "Reactive Power", "signalName": "ReactivePower", "units": "kVAr"},
+                                            {"name": "Cos. phi", "signalName": "CosPhi", "decimals": 3}
+                                        ],
+                                        [
+                                            {"name": "Wind Speed", "signalName": "WindSpeed", "decimals": 2, "units": "m/s"},
+                                            {"name": "Wind Direction", "signalName": "WindDirection", "units": "º"},
+                                            {"name": "Temperature", "signalName": "Temperature", "decimals": 1, "units": "ºC"}
+                                        ]
+                                    ]
+                                }
+                            },
+                            "servicesData":{
+                                "deviceModel": {
+                                    "models": ["Nordex"]
+                                }
+                            }
+                        }, 
+		"PARK_SanchoAbarca": "default",
+		"SOLAR_Espejo": {
+                            "id": "SOLAR_Espejo",
+                            "name": "PS Espejo",
+                            "viewLevel": "ASSET",
+                            "pages": {
+                                "admin":[
+                                    {"id": "item-viewer", "name": "Item Viewer", "pageFile": "page-item-viewer", "icon": "icon dripicons-preview"}
+                                ],
+                                "maintainer": [
+                                    {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"}
+                                ],
+                                "operator": [
+                                    {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"},
+                                    {"id": "control", "name": "Overview", "pageFile": "page-control",  "icon": "icon dripicons-toggles"},
+                                    {"id": "inverters", "name": "Inverters", "pageFile": "page-devices",  "icon": "icon dripicons-retweet", "deviceType": "InvSMA"},
+                                    {"id": "stringboxes", "name": "Stringboxes", "pageFile": "page-devices",  "icon": "icon dripicons-box", "deviceType": "SbSMA"},
+                                    {"id": "meteos", "name": "Meteos", "pageFile": "page-devices",  "icon": "icon dripicons-brightness-max", "deviceType": "Meteo"}
+                                                                    
+                                ],
+                                "owner": [
+                                ]
+                            },
+                            "pagesData": {
+                                "control": {
+                                    "productionGraph": {                    
+                                        "graphSignals": [
+                                            {"name": "Active Power", "signalName": "ActivePower", "multiply": 0.001, "units": "MW"},
+                                            {"name": "SP. Applied", "signalName": "SetpointApplied", "multiply": 0.001, "units": "MW"},
+                                            {"name": "Rated Power", "signalName": "NominalPower", "multiply": 0.001, "units": "MW"},
+                                            {"name": "SP. REE", "signalName": "CECOELSetpointReceived", "multiply": 0.001, "units": "MW"},
+                                            {"name": "WindSpeed", "yAxis": "right", "signalName": "WindSpeed", "units": "m/s"}                                                
+                                        ]
+                                    },
+                                    "powerFactorGraph": {                    
+                                        "graphSignals": [
+                                            {"name": "Cos. phi", "signalName": "CosPhi", "drawPoints": true}
+                                        ],
+                                        "marks": [
+                                            {"name": "Cos. phi Max", "value":0.98},
+                                            {"name": "Cos. phi Min", "value": -0.98}
+                                        ]
+                                    },
+                                    "writeSignals": [
+                                    ],
+                                    "displaySignals": [
+                                        [
+                                            {"name": "Setpoint Applied", "signalName": "SetpointApplied", "units": "kW"},
+                                            {"name": "Setpoint Received", "signalName": "SetpointReceived", "units": "kW"},
+                                            {"name": "Rated Active Power", "signalName": "NominalPower", "units": "kW"},
+                                            {"name": "Active Power", "signalName": "ActivePower", "units": "kW"},
+                                            {"name": "Reactive Power", "signalName": "ReactivePower", "units": "kVAr"},
+                                            {"name": "Cos. phi", "signalName": "CosPhi", "decimals": 3}
+                                        ],
+                                        [
+                                            {"name": "Wind Speed", "signalName": "WindSpeed", "decimals": 2, "units": "m/s"},
+                                            {"name": "Wind Direction", "signalName": "WindDirection", "units": "º"},
+                                            {"name": "Temperature", "signalName": "Temperature", "decimals": 1, "units": "ºC"}
+                                        ]
+                                    ]
+                                }
+                            },
+                            "servicesData":{
+                                "deviceModel": {
+                                    "models": ["Gamesa"]
+                                }
+                            }
+                        },   
+		"SOLAR_Plasencia": {
+                            "id": "SOLAR_Plasencia",
+                            "name": "PS Plasencia",
+                            "viewLevel": "ASSET",
+                            "pages": {
+                                "admin":[
+                                    {"id": "item-viewer", "name": "Item Viewer", "pageFile": "page-item-viewer", "icon": "icon dripicons-preview"}
+                                ],
+                                "maintainer": [
+                                    {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"}
+                                ],
+                                "operator": [
+                                    {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"},
+                                    {"id": "control", "name": "Overview", "pageFile": "page-control",  "icon": "icon dripicons-toggles"},
+                                    {"id": "inverters", "name": "Inverters", "pageFile": "page-devices",  "icon": "icon dripicons-retweet", "deviceType": "Inv"},
+                                    {"id": "stringboxes", "name": "SBs", "pageFile": "page-devices",  "icon": "icon dripicons-box", "deviceType": "CSP"},
+                                    {"id": "mets", "name": "Mets", "pageFile": "page-devices",  "icon": "icon dripicons-brightness-max", "deviceType": "MET"},                               
+									{"id": "meteo", "name": "Meteos", "pageFile": "page-devices",  "icon": "icon dripicons-brightness-max", "deviceType": "Meteo"}                                
+                                ],
+                                "owner": [
+                                ]
+                            },
+                            "pagesData": {
+                                "control": {
+                                    "productionGraph": {                    
+                                        "graphSignals": [
+                                            {"name": "Active Power", "signalName": "ActivePower", "multiply": 0.001, "units": "MW"},
+                                            {"name": "SP. Applied", "signalName": "SetpointApplied", "multiply": 0.001, "units": "MW"},
+                                            {"name": "Rated Power", "signalName": "NominalPower", "multiply": 0.001, "units": "MW"},
+                                            {"name": "SP. REE", "signalName": "CECOELSetpointReceived", "multiply": 0.001, "units": "MW"},
+                                            {"name": "WindSpeed", "yAxis": "right", "signalName": "WindSpeed", "units": "m/s"}                                                
+                                        ]
+                                    },
+                                    "powerFactorGraph": {                    
+                                        "graphSignals": [
+                                            {"name": "Cos. phi", "signalName": "CosPhi", "drawPoints": true}
+                                        ],
+                                        "marks": [
+                                            {"name": "Cos. phi Max", "value":0.98},
+                                            {"name": "Cos. phi Min", "value": -0.98}
+                                        ]
+                                    },
+                                    "writeSignals": [
+                                    ],
+                                    "displaySignals": [
+                                        [
+                                            {"name": "Setpoint Applied", "signalName": "SetpointApplied", "units": "kW"},
+                                            {"name": "Setpoint Received", "signalName": "SetpointReceived", "units": "kW"},
+                                            {"name": "Rated Active Power", "signalName": "NominalPower", "units": "kW"},
+                                            {"name": "Active Power", "signalName": "ActivePower", "units": "kW"},
+                                            {"name": "Reactive Power", "signalName": "ReactivePower", "units": "kVAr"},
+                                            {"name": "Cos. phi", "signalName": "CosPhi", "decimals": 3}
+                                        ],
+                                        [
+                                            {"name": "Wind Speed", "signalName": "WindSpeed", "decimals": 2, "units": "m/s"},
+                                            {"name": "Wind Direction", "signalName": "WindDirection", "units": "º"},
+                                            {"name": "Temperature", "signalName": "Temperature", "decimals": 1, "units": "ºC"}
+                                        ]
+                                    ]
+                                }
+                            },
+                            "servicesData":{
+                                "deviceModel": {
+                                    "models": ["Gamesa"]
+                                }
+                            }
+                        },
+		"SOLAR_Zuera1": "default", 
+		"SOLAR_Zuera2": "default",   
+		"SOLAR_Secadero": "default", 
+		"SOLAR_Plaza": "default",   		
+		"SOLAR_Vinaceite": "default", 		
+		"SOLAR_Castelnou": "default"
+    },
+    "defaultView": {
+        "viewLevel": "ASSET",
+        "pages": {
+            "admin":[
+                {"id": "item-viewer", "name": "Item Viewer", "pageFile": "page-item-viewer", "icon": "icon dripicons-preview"}
+            ],
+            "maintainer": [
+                 {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"}
+            ],
+            "operator": [
+                {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"},
+                {"id": "control", "name": "Overview", "pageFile": "page-control",  "icon": "icon dripicons-toggles"}                                        
+            ],
+            "owner": [
+            ]
+        },
+        "pagesData": {
+            "control": {
+                "productionGraph": {                    
+                    "graphSignals": [
+                        {"name": "Active Power", "signalName": "ActivePower", "multiply": 0.001, "units": "MW"},
+                        {"name": "SP. Applied", "signalName": "SetpointApplied", "multiply": 0.001, "units": "MW"},
+                        {"name": "Rated Power", "signalName": "NominalPower", "multiply": 0.001, "units": "MW"},
+                        {"name": "SP. REE", "signalName": "CECOELSetpointReceived", "multiply": 0.001, "units": "MW"},
+                        {"name": "WindSpeed", "yAxis": "right", "signalName": "WindSpeed", "units": "m/s"}                                                
+                    ]
+                },
+                "powerFactorGraph": {                    
+                    "graphSignals": [
+                        {"name": "Cos. phi", "signalName": "CosPhi", "drawPoints": true}
+                    ],
+                    "marks": [
+                        {"name": "Cos. phi Max", "value":0.98},
+                        {"name": "Cos. phi Min", "value": -0.98}
+                    ]
+                },
+                "writeSignals": [
+                ],
+                "displaySignals": [
+                    [
+                        {"name": "Setpoint Applied", "signalName": "SetpointApplied", "units": "kW"},
+                        {"name": "Setpoint Received", "signalName": "SetpointReceived", "units": "kW"},
+                        {"name": "Rated Active Power", "signalName": "NominalPower", "units": "kW"},
+                        {"name": "Active Power", "signalName": "ActivePower", "units": "kW"},
+                        {"name": "Reactive Power", "signalName": "ReactivePower", "units": "kVAr"},
+                        {"name": "Cos. phi", "signalName": "CosPhi", "decimals": 3}
+                    ],
+                    [
+                        {"name": "Wind Speed", "signalName": "WindSpeed", "decimals": 2, "units": "m/s"},
+                        {"name": "Wind Direction", "signalName": "WindDirection", "units": "º"},
+                        {"name": "Temperature", "signalName": "Temperature", "decimals": 1, "units": "ºC"}
+                    ]
+                ]
+            }
+        },
+        "servicesData":{
+            "deviceModel": {
+                "models": ["Gamesa"]
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "images":["IMG_Aguila1.jpg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PE Aguila",
+                    "Power Rate": "19.500 kW",
+                    "Elements": "15 turbines Model Nordex N62 (1.300kW, diameter 62m)",
+                    "Grid Connection": "SET PE El Aguila",
+                    "Year": "2001"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "SET Jalón",
+                    "Zone": "Pedrola (Zaragoza)",
+                    "Voltage (kV)": "20 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M - ELECTRICAL WTG": {
+                    "Urbano Moya (649318958)": "sinergiaom@jorgesl.com",
+                    "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+

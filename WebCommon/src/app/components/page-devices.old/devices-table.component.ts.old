@@ -1,0 +1,102 @@
+import Ractive from 'ractive';
+
+import { StateContainerService } from '../../services/state-container.service';
+import { CompactScadaService } from '../../services/compact-scada.service';
+import { DeviceModelService } from '../../services/device-model.service';
+
+export function DevicesTableComponent() {             
+    
+    let ractive: IRactive = undefined;
+
+    const stateContainer = StateContainerService();
+    const compactScada = CompactScadaService();
+    const deviceModel: DeviceModelService = DeviceModelService();
+    
+    const ractiveData = {
+        el: undefined,
+        template: `            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>WTG</th>
+                        <th>Status</th>
+                        <th class="large">Active Power (kW)</th>
+                        <th class="large">Reactive Power (kWAr)</th>
+                        <th>Wind Speed (m/s)</th>
+                        <th>Actions</th>
+                        <th>Alerts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#devices}}
+                    <tr>
+                        <td>
+                            <span class="color-block-success availability-{{getAvailability(model, signals)}}">                            
+                                {{id}}
+                            </span>
+                        </td>
+                        <td class="large">{{getStatusDescription(model, signals)}}</td>
+                        <td class="large">{{signals.ActivePower.Value}}</td>
+                        <td>{{signals.ReactivePower.Value}}</td>
+                        <td>{{signals.WindSpeed.Value}}</td>
+                        <td>Disable</td>
+                        <td>-</td>
+                    </tr>
+                    {{/devices}}                   
+                </tbody>
+            </table>
+        `,
+        data: {
+            devices: [],
+            getAvailability,
+            getStatusDescription
+        }
+    };
+
+    let unsubcribe = undefined;
+    
+    function init(elem) {
+        console.log("<devices-table>");
+        ractiveData.el = elem;
+        ractive = new Ractive(ractiveData);
+
+        const assetId = stateContainer.read('view');
+        const asset = stateContainer.Static.Data.views[assetId];
+        const deviceModels = asset.servicesData.deviceModel.models;
+
+        const subscribePattern = `^${assetId}\.(${deviceModels.join('|')})`; // ^PARK_Somewhere.(Gamesa|Eco)
+
+        unsubcribe = compactScada.subscribe(subscribePattern, function(signals: Signal[]) {            
+            const devices = compactScada.groupDevices(signals);
+            ractive.set('devices', devices);
+        });
+
+        console.log("</devices-table>");
+    }
+
+    function getStatusDescription(model, signals){
+        let statusDescription = '_';
+        if (signals) {
+            statusDescription = deviceModel.models[model].getStatusDescription(signals);
+        }
+        return statusDescription;
+    }
+
+    function getAvailability(model, signals){
+        let availability = '_';
+        if (signals) {
+            availability = deviceModel.models[model].getAvailability(signals);
+        }
+        return availability;
+    }
+    
+    function clean() {
+        unsubcribe();
+        ractive.teardown();
+    }
+    
+    return {
+        init,
+        clean
+    };
+}

@@ -1,0 +1,182 @@
+@mixin modal-with-theme($bgColor, $textColor){
+  .modal-dialog{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &.modal-narrow{
+      width: calc(100vw-30px);
+      max-width: 450px;
+    }
+    .modal-content{
+      border-radius: 3px;
+      .modal-header{
+        padding: 0px;
+        border: none;
+        background-color: $textColor;
+        margin-bottom: 15px;
+        .modal-title{
+          color: $textWhite;
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 500;
+          padding: 10px 15px;
+        }
+        .modal-tab-wrapper{
+          height: 40px;
+          font-size: 0px;
+          .modal-tab{
+            width: 50%;
+            height: 40px;
+            display: inline-block;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+            color: rgba($textWhite, 0.5);
+            cursor: pointer;
+            @include transition-intent();
+            &.active{
+              color: $textWhite;
+              box-shadow: inset 0px -3px 0px 0px $textWhite;
+            }
+            &:hover{
+              color: $textWhite;
+            }
+          }
+        }
+        .close{
+          color: $textWhite;
+          margin-top: 10px;
+          margin-right: 10px;
+        }
+      }
+      .modal-body{
+        padding: 0px 0px 15px 0px;
+        line-height: 24px;
+        .notice-text{
+          padding: 10px 15px;
+          font-size: 14px;
+        }
+        .modal-message{
+          padding: 0px 15px;
+        }
+        ul{
+          margin-left: 15px;
+          margin-bottom: -10px;
+          padding: 0px;
+          list-style-type: none;
+          li{
+            border-top: 1px solid $lineGray;
+            padding: 10px 0px;
+            position: relative;
+            .list-icon{
+              font-size: 40px;
+              opacity: 0.25;
+              position: absolute;
+              right: 15px;
+              top: 10px;
+              &.success{
+                color: $successGreen;
+              }
+              &.warning{
+                color: $warningYellow;
+              }
+              &.danger{
+                color: $dangerOrange;
+              }
+              &.error{
+                color: $errorRed;
+              }
+              &.info{
+                color: $infoBlue;
+              }
+            }
+            .list-title{
+              font-size: 18px;
+              margin-bottom: 5px;
+              font-weight: 500;
+              line-height: 24px;
+              color: $textColor;
+            }
+            .list-time{
+              color: $textMiddleGray;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 18px;
+            }
+            .list-message{
+              margin: 5px 0px;
+            }
+            .button-container{
+              padding-right: 15px;
+              text-align: right;
+              margin-top: 5px;
+              button{
+                color: $textColor;
+                background: none;
+                border: none;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 14px;
+                border-radius: 3px;
+                margin-left: 5px;
+                @include transition-intent();
+                &:hover, &:focus{
+                  outline: none;
+                  color: $textWhite;
+                  background: $textColor;
+                }
+              }
+              input[type="text"]{
+                background: none;
+                width: 100%;
+                height: 36px;
+                border: none;
+                border-bottom: 2px solid $lineGray;
+                -webkit-appearance: none;
+                appearance: none;
+                margin-bottom: 5px;
+                border-radius: 0px;
+                color: $textColor;
+                @include transition-intent();
+                &:focus{
+                  outline: none;
+                  border-bottom-color: $textColor;
+                }
+              }
+            }
+            &:first-of-type{
+              border-top: none;
+              padding-top: 0px;
+              .list-icon{
+                top: 0px;
+              }
+            }
+          }
+        }
+      }
+      .modal-footer{
+        border: none;
+        padding: 0px 15px 10px 15px;
+        text-align: right;
+        margin-top: -5px;
+        button{
+          color: $textColor;
+          background: none;
+          border: none;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 14px;
+          border-radius: 3px;
+          margin-left: 5px;
+          @include transition-intent();
+          &:hover, &:focus{
+            outline: none;
+            color: $textWhite;
+            background: $textColor;
+          }
+        }
+      }
+    }
+  }
+}

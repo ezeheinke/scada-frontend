@@ -1,0 +1,64 @@
+<html>
+  <head>    
+    <title>CompactSCADA</title>     
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="icon" type="image/ico" href="/data/favicon.ico" />
+    <base href="/">        
+    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/dc/dc.min.css"/>
+    <!-- TODO: deprecate datetimepicker for daterangepicker-->
+    <link rel="stylesheet" href="node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="data/map-europe/leaflet.css"/>
+    <link rel="stylesheet" href="data/map-europe/MarkerCluster.css"/>
+    <link rel="stylesheet" href="data/map-europe/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="libs/vis.min.css"/>
+    <link rel="stylesheet" href="styles/css/main.css"/>
+    <link rel="stylesheet" href="styles/css/styles.css"/>
+    
+    <!-- dcjs (not working imports with system.js) -->
+    <script src="/node_modules/dc/node_modules/crossfilter2/crossfilter.js"></script>
+    <script src="/node_modules/dc/node_modules/d3/d3.min.js"></script>
+    <script src="/node_modules/dc/dc.js"></script>
+    <!-- JQuery -->  
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Moment -->
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <!-- Bootstrap datetimepicker (TODO: deprecate) -->
+    <script src="node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- Bootstrap daterangepicker -->
+    <script src="node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- App -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <!-- LeafLet -->
+    <script>
+      
+    </script>
+    <script src="data/map-europe/leaflet.js"></script>
+    <script src="data/map-europe/leaflet.markercluster.js"></script>
+    <!--<script src="node_modules/zone.js/dist/zone.js"></script>-->
+    <!--<script src="node_modules/reflect-metadata/Reflect.js"></script>-->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script >
+        
+    </script>
+    <script>
+      System.import('app');      
+    </script>        
+  </head>
+  <body>
+    
+    <div id="app"></div>
+    <div id="load-icon-container" class="load-icon"></div>
+
+    <!-- Modal window service -->
+    <div id="modal-window" class="modal fade" tabindex="-1" role="dialog">        
+    </div>
+
+  </body>
+</html>

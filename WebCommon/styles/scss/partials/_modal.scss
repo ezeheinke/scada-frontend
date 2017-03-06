@@ -1,0 +1,14 @@
+#modal-window{
+  &.theme-maintainer{
+    @include modal-with-theme($bgDarkPurple, $lineLightPurple);
+  }
+  &.theme-operator{
+    @include modal-with-theme($bgDarkBlue, $lineLightBlue);
+  }
+  &.theme-owner{
+    @include modal-with-theme($bgDarkGreen, $lineLightGreen);
+  }
+  &.theme-admin{
+    @include modal-with-theme($themeDarkGreen, $themeGreen);
+  }
+}

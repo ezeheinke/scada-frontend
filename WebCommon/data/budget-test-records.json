@@ -1,0 +1,123 @@
+[
+  {
+    "hour": 0,    
+    "energy": 1500,
+    "price": 10
+  },
+  {
+    "hour": 1,    
+    "energy": 1530,
+    "price": 10
+  },
+  {
+    "hour": 2,    
+    "energy": 1570,
+    "price": 10
+  },
+  {
+    "hour": 3,    
+    "energy": 1530,
+    "price": 12
+  },
+  {
+    "hour": 4,    
+    "energy": 2000,
+    "price": 13
+  },
+  {
+    "hour": 5,    
+    "energy": 1700,
+    "price": 14
+  },
+    {
+    "hour": 6,    
+    "energy": 1850,
+    "price": 15
+  },
+  {
+    "hour": 7,    
+    "energy": 1900,
+    "price": 16
+  },
+  {
+    "hour": 8,    
+    "energy": 1760,
+    "price": 17
+  },
+  {
+    "hour": 9,    
+    "energy": 1680,
+    "price": 18
+  },
+  {
+    "hour": 10,    
+    "energy": 1710,
+    "price": 21
+  },
+  {
+    "hour": 11,    
+    "energy": 1800,
+    "price": 22
+  },
+  {
+    "hour": 12,    
+    "energy": 1790,
+    "price": 23
+  }
+  ,
+  {
+    "hour": 13,    
+    "energy": 1730,
+    "price": 20
+  },
+  {
+    "hour": 14,    
+    "energy": 1580,
+    "price": 50
+  },
+  {
+    "hour": 15,    
+    "energy": 1700,
+    "price": 45
+  },
+  {
+    "hour": 16,    
+    "energy": 1850,
+    "price": 34
+  },
+  {
+    "hour": 17,    
+    "energy": 2000,
+    "price": 60
+  },
+    {
+    "hour": 18,    
+    "energy": 1970,
+    "price": 50
+  },
+  {
+    "hour": 19,    
+    "energy": 1965,
+    "price": 45
+  },
+  {
+    "hour": 20,    
+    "energy": 1840,
+    "price": 35
+  },
+  {
+    "hour": 21,    
+    "energy": 1750,
+    "price": 30
+  },
+  {
+    "hour": 22,    
+    "energy": 1600,
+    "price": 20
+  },
+  {
+    "hour": 23,    
+    "energy": 1800,
+    "price": 15
+  }
+]

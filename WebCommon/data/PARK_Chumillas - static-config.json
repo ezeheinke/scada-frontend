@@ -1,0 +1,134 @@
+{
+    "rootView": "PARK_Chumillas",
+    "serverPath": "http://localhost:8090",
+    "views": {
+        "PARK_Chumillas": {
+            "id": "PARK_Chumillas",
+            "viewLevel": "ASSET",
+            "name": "PE Chumillas",            
+            "pages": {
+                "maintainer": [
+                    {"id": "info", "name": "Info", "pageFile": "page-info"},            
+                    {"id": "devices", "name": "Devices", "pageFile": "page-devices"},
+                    {"id": "map", "name": "Map", "pageFile": "page-map"},
+                    {"id": "analysis", "name": "Analysis", "pageFile": "page-analysis"},
+                    {"id": "reports", "name": "Reports", "pageFile": "page-reports"}
+                ],
+                "operator": [
+                    {"id": "info", "name": "Info", "pageFile": "page-info"},
+                    {"id": "devices", "name": "Devices", "pageFile": "page-devices"},
+                    {"id": "control", "name": "Control", "pageFile": "page-control"},
+                    {"id": "analysis", "name": "Analysis", "pageFile": "page-analysis"},
+                    {"id": "reports", "name": "Reports", "pageFile": "page-reports"}
+                ],
+                "owner": [
+                    {"id": "info", "name": "Info", "pageFile": "page-info"},
+                    {"id": "devices", "name": "Devices", "pageFile": "page-devices"},
+                    {"id": "budget", "name": "Budget", "pageFile": "page-budget"},
+                    {"id": "analysis", "name": "Analysis", "pageFile": "page-analysis"},
+                    {"id": "reports", "name": "Reports", "pageFile": "page-reports"}
+                ]
+            },
+            "pagesData": {
+                "info": {
+                    "markers": [
+                        {"id": "PARK_Chumillas", "type": "asset", "latitude": 40.9308, "longitude": -3.703}
+                    ],
+                    "images": [
+                        "images/slide0.jpg",
+                        "images/slide1.jpg",
+                        "images/slide2.jpg",
+                        "images/slide3.jpg",
+                        "images/slide4.jpg"
+                    ]
+                },
+                "map": {
+                    "markers": [
+                        {"id": "PARK_Chumillas", "type": "asset", "latitude": 40.9308, "longitude": -3.703},
+
+                        {"id": "001", "type": "windTurbine", "latitude": 40.8108, "longitude": -3.853},
+                        {"id": "002", "type": "windTurbine", "latitude": 40.8108, "longitude": -3.753},
+                        {"id": "003", "type": "windTurbine", "latitude": 40.8108, "longitude": -3.653},
+                        {"id": "004", "type": "windTurbine", "latitude": 40.8108, "longitude": -3.553},
+                        {"id": "005", "type": "windTurbine", "latitude": 40.8108, "longitude": -3.453},
+
+                        {"id": "006", "type": "windTurbine", "latitude": 40.8608, "longitude": -3.853},
+                        {"id": "007", "type": "windTurbine", "latitude": 40.8608, "longitude": -3.753},
+                        {"id": "008", "type": "windTurbine", "latitude": 40.8608, "longitude": -3.653},
+                        {"id": "009", "type": "windTurbine", "latitude": 40.8608, "longitude": -3.553},
+                        {"id": "010", "type": "windTurbine", "latitude": 40.8608, "longitude": -3.453},
+
+                        {"id": "011", "type": "windTurbine", "latitude": 40.9108, "longitude": -3.853},
+                        {"id": "012", "type": "windTurbine", "latitude": 40.9108, "longitude": -3.753},
+                        {"id": "013", "type": "windTurbine", "latitude": 40.9108, "longitude": -3.653},
+                        {"id": "014", "type": "windTurbine", "latitude": 40.9108, "longitude": -3.553},
+                        {"id": "015", "type": "windTurbine", "latitude": 40.9108, "longitude": -3.453},
+
+                        {"id": "016", "type": "windTurbine", "latitude": 40.9608, "longitude": -3.853},
+                        {"id": "017", "type": "windTurbine", "latitude": 40.9608, "longitude": -3.753},
+                        {"id": "018", "type": "windTurbine", "latitude": 40.9608, "longitude": -3.653},
+                        {"id": "019", "type": "windTurbine", "latitude": 40.9608, "longitude": -3.553},
+                        {"id": "020", "type": "windTurbine", "latitude": 40.9608, "longitude": -3.453},
+
+                        {"id": "021", "type": "windTurbine", "latitude": 41.0108, "longitude": -3.853},
+                        {"id": "022", "type": "windTurbine", "latitude": 41.0108, "longitude": -3.753},
+                        {"id": "023", "type": "windTurbine", "latitude": 41.0108, "longitude": -3.653},
+                        {"id": "024", "type": "windTurbine", "latitude": 41.0108, "longitude": -3.553},
+                        {"id": "025", "type": "windTurbine", "latitude": 41.0108, "longitude": -3.453}
+                    ]
+                },
+                "control": {
+                    "productionGraph": {
+                        "title": "Real Time Production Overview",
+                        "yTitle": "Power (MW)",
+                        "yMax": {"signalName": "NominalPower", "multiply": 0.001},
+                        "yMin": 0,
+                        "y2Title": "Windspeed (m/s)",
+                        "y2Max": 30,
+                        "graphSignals": [
+                            {"name": "Active Power", "signalName": "ActivePower", "multiply": 0.001, "units": "MW"},
+                            {"name": "Set. Applied", "signalName": "SetpointApplied", "multiply": 0.001, "units": "MW"},
+                            {"name": "Set. Request", "signalName": "SetpointRequest", "multiply": 0.001, "units": "MW"},
+                            {"name": "WindSpeed", "yAxis": "right", "signalName": "WindSpeed", "units": "m/s"}                                                
+                        ]
+                    },
+                    "powerFactorGraph": {
+                        "title": "Real Time Power Factor Compliance",
+                        "yFormat": "cosPhi",
+                        "graphSignals": [
+                            {"name": "Cos. phi", "signalName": "CosPhi", "drawPoints": true}
+                        ],
+                        "marks": [
+                            {"name": "Cos. phi Max", "value": 0.5},
+                            {"name": "Cos. phi Min", "value": -0.75}
+                        ]
+                    },
+                    "inputSignals": [
+                        {"name": "Setpoint Applied", "signalName": "SetpointApplied", "writeSignal": "SetpointApplied", "units": "kW"},
+                        {"name": "Cos. phi reference", "signalName": "CosPhi", "writeSignal": "CosPhi", "decimals": 3}
+                    ],
+                    "displaySignals": [
+                        [
+                            {"name": "Setpoint Received", "signalName": "SetpointReceived", "units": "kW"},
+                            {"name": "Rated Active Power", "signalName": "NominalPower", "units": "kW"},
+                            {"name": "Active Power", "signalName": "ActivePower", "units": "kW"},
+                            {"name": "Reactive Power", "signalName": "ReactivePower", "units": "kW"},
+                            {"name": "Voltage R", "signalName": "VoltageR", "units": "kV"},
+                            {"name": "Cos. phi", "signalName": "CosPhi", "decimals": 3}
+                        ],
+                        [
+                            {"name": "Wind Speed", "signalName": "WindSpeed", "decimals": 2, "units": "m/s"},
+                            {"name": "Wind Direction", "signalName": "WindDirection", "units": "º"},
+                            {"name": "Temperature", "signalName": "Temperature", "decimals": 1, "units": "ºC"}
+                        ]
+                    ]
+                }
+            },
+            "servicesData":{
+                "deviceModel": {
+                    "models": ["Gamesa"]
+                }
+            }
+        }
+    }
+}

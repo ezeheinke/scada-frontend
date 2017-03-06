@@ -1,0 +1,498 @@
+﻿{
+    "nodes": [
+        {
+            "id": "NODE_Jalon",
+            "name": "JALON",
+            "setIds": [
+					"SET_Coscojar",
+					"SET_Aguila"	
+			]
+        },
+        {
+            "id": "NODE_Tauste",
+            "name": "TAUSTE",
+            "setIds": ["SET_SanchoAbarca"]
+        },
+        {
+            "id": "NODE_Espejo",
+            "name": "ESPEJO",
+            "setIds": ["SET_Espejo"]
+        },        
+        {
+            "id": "NODE_Pradillo",
+            "name": "PRADILLO",
+            "setIds": ["SET_Plasencia"]
+        },
+		{
+            "id": "NODE_Zuera",
+            "name": "ZUERA",
+            "setIds": ["SET_Secadero"]
+        },
+        {
+            "id": "NODE_C9Logistica",
+            "name": "C9LOGISTICA",
+            "setIds": ["SET_Plaza"]
+        },
+        {
+            "id": "NODE_Vinaceite",
+            "name": "VINACEITE",
+            "setIds": ["SET_Vinaceite"]
+        },
+        {
+            "id": "NODE_ZueraCampillo",
+            "name": "ZUERA CAMPILLO",
+            "setIds": ["SET_Zuera1"]
+        },
+        {
+            "id": "NODE_ZueraOeste",
+            "name": "ZUERA OESTE",
+            "setIds": ["SET_Zuera2"]
+        },
+        {
+            "id": "NODE_Escatron",
+            "name": "ESCATRÓN",
+            "setIds": ["SET_Castelnou"]
+        }
+    ],
+    
+    "sets": [{
+        "id": "SET_Coscojar",
+        "name": "Coscojar",
+        "assetIds": ["PARK_Coscojar"]
+    }, 
+{
+        "id": "SET_Aguila",
+        "name": "Aguila",
+        "assetIds": ["PARK_Aguila"]
+    }, {
+        "id": "SET_SanchoAbarca",
+        "name": "SanchoAbarca",
+        "assetIds": ["PARK_SanchoAbarca"]
+    }, {
+        "id": "SET_Espejo",
+        "name": "Espejo",
+        "assetIds": ["SOLAR_Espejo"]
+    },  {
+        "id": "SET_Plasencia",
+        "name": "Plasencia",
+        "assetIds": ["SOLAR_Plasencia"]
+    },  {
+        "id": "SET_Zuera1",
+        "name": "Zuera1",
+        "assetIds": ["SOLAR_Zuera1"]
+    }, {
+        "id": "SET_Zuera2",
+        "name": "Zuera2",
+        "assetIds": ["SOLAR_Zuera2"]
+    }, {
+        "id": "SET_Secadero",
+        "name": "Secadero",
+        "assetIds": ["SOLAR_Secadero"]
+    }, {
+        "id": "SET_Plaza",
+        "name": "Plaza",
+        "assetIds": ["SOLAR_Plaza"]
+    },
+	{
+        "id": "SET_Vinaceite",
+        "name": "Vinaceite",
+        "assetIds": ["SOLAR_Vinaceite"]
+    },
+	{
+        "id": "SET_Castelnou",
+        "name": "Castelnou",
+        "assetIds": ["SOLAR_Castelnou"]
+    }],
+	
+    "assets": [{
+        "id": "PARK_Coscojar",
+        "name": "PE Coscojar",
+        "powerAds": true,
+        "eventSourceName": "PE Coscojar",
+        "coords": {
+            "latitude": 41.707358,
+            "longitude": -1.26875
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_Aguila",
+        "name": "PE Águila",
+        "powerAds": true,
+        "eventSourceName": "PE Águila",
+        "coords": {
+            "latitude": 41.707358,
+            "longitude": -1.309631
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_SanchoAbarca",
+        "name": "PE SanchoAbarca",
+        "powerAds": true,
+        "eventSourceName": "PE SanchoAbarca",
+        "coords": {
+            "latitude": 42.03478,
+            "longitude": -1.312345
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Espejo",
+        "name": "PS Espejo",
+        "powerAds": true,
+        "eventSourceName": "PS Espejo",
+        "coords": {
+            "latitude": 37.641441,
+            "longitude": -4.578306
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Secadero",
+        "name": "PS Secadero",
+        "powerAds": true,
+        "eventSourceName": "PS Secadero",
+        "coords": {
+            "latitude": 41.899224,
+            "longitude": -0.789908
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Plaza",
+        "name": "PS Plaza",
+        "powerAds": true,
+        "eventSourceName": "PS Plaza",
+        "coords": {
+            "latitude": 41.648184,
+            "longitude":  -0.983540
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Plasencia",
+        "name": "PS Plasencia",
+        "powerAds": true,
+        "eventSourceName": "PS Plasencia",
+        "coords": {
+            "latitude": 41.711256,
+            "longitude": -1.249682
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Vinaceite",
+        "name": "PS Vinaceite",
+        "powerAds": true,
+        "eventSourceName": "PS Vinaceite",
+        "coords": {
+            "latitude": 41.307953,
+            "longitude": -0.611088
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Zuera1",
+        "name": "PS Zuera 1",
+        "powerAds": true,
+        "eventSourceName": "PS Zuera 1",
+        "coords": {
+            "latitude": 41.934072,
+            "longitude": -0.802902
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Zuera2",
+        "name": "PS Zuera 2",
+        "powerAds": true,
+        "eventSourceName": "PS Zuera 2",
+        "coords": {
+            "latitude":  41.944665,
+            "longitude":  -0.816070
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Castelnou",
+        "name": "PS Castelnou",
+        "powerAds": true,
+        "eventSourceName": "PS Castelnou",
+        "coords": {
+            "latitude": 41.21996,
+            "longitude": -0.301464
+        },
+        "controlAvailable": true
+    }],
+    "devices": [
+	{
+        "asset": "PARK_Aguila",
+		"Nordex": {
+			"signals": [
+				{"name": "Active Power (kW)", "signalName": "ActivePower", "multiply": 1, "decimals": 2,"parentSumatory": true},
+				{"name": "Reactive Power (kVAr)", "signalName": "ReactivePower", "multiply": 1, "decimals": 2,"parentSumatory": true},
+				{"name": "WindSpeed (m/s)", "signalName": "WindSpeed", "multiply": 1, "decimals": 1,"parentAverage": true}
+			],
+			"elements" : [
+				{"name":"WTGs", "id":"", "children":[
+											{"id": "001", "name": "WTG 001"}, 
+											{"id": "002", "name": "WTG 002"},
+											{"id": "003", "name": "WTG 003"}, 
+											{"id": "004", "name": "WTG 004"},
+											{"id": "005", "name": "WTG 005"}, 
+											{"id": "006", "name": "WTG 006"},
+											{"id": "007", "name": "WTG 007"}, 
+											{"id": "007", "name": "WTG 008"},
+											{"id": "009", "name": "WTG 009"}, 
+											{"id": "010", "name": "WTG 010"},
+											{"id": "011", "name": "WTG 011"}, 
+											{"id": "012", "name": "WTG 012"},
+											{"id": "013", "name": "WTG 013"}, 
+											{"id": "014", "name": "WTG 014"},
+											{"id": "015", "name": "WTG 015"}
+											]
+				}
+			]            
+		}
+    },
+	{
+        "asset": "SOLAR_Plasencia",
+		"Inv": {
+			"signals": [
+				{"name": "Active P. (kW)", "signalName": "Pac", "multiply": 1, "decimals": 2,"parentSumatory": true},
+				{"name": "DC Power (kW)", "signalName": "PDC", "multiply": 1, "decimals": 2,"parentSumatory": true},
+				{"name": "DC Voltage (V)", "signalName": "VDC", "multiply": 1, "decimals": 0,"parentAverage": true},                
+				{"name": "DC Current (A)", "signalName": "IDC", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "AC Voltage 1 (V)", "signalName": "Vac1", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "AC Voltage 2 (V)", "signalName": "Vac2", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "AC Voltage 3 (V)", "signalName": "Vac3", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "AC Current 1 (A)", "signalName": "Iac1", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "AC Current 2 (A)", "signalName": "Iac2", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "AC Current 3 (A)", "signalName": "Iac3", "multiply": 1, "decimals": 0,"parentAverage": true}
+			],
+			"elements" : [
+				{"name":"CT 1", "id":"001", "children":[{"id": "001", "name": "PLA 001.1"}, {"id": "002", "name": "PLA 001.2"}]},
+				{"name":"CT 2", "id":"002", "children":[{"id": "003", "name": "PLA 002.1"}, {"id": "004", "name": "PLA 002.2"}]},
+				{"name":"CT 3", "id":"003", "children":[{"id": "005", "name": "PLA 003.1"}, {"id": "006", "name": "PLA 003.2"}]},
+				{"name":"CT 4", "id":"004", "children":[{"id": "007", "name": "PLA 004.1"}, {"id": "008", "name": "PLA 004.2"}]}
+			]            
+		},
+		"CSP": {
+			"signals": [
+				{"name": "DC Voltage (V)", "signalName": "Tension", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "DC Current (A)", "signalName": "IntSalida", "multiply": 1, "decimals": 0,"parentAverage": true},				
+				{"name": "Current (A)", "signalName": "IntSalida", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "Current 1 (A)", "signalName": "Int1", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "Current 2 (A)", "signalName": "Int2", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "Current 3 (A)", "signalName": "Int3", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "Current 4 (A)", "signalName": "Int4", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "Current 5 (A)", "signalName": "Int5", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "Current 6 (A)", "signalName": "Int6", "multiply": 1, "decimals": 1,"parentAverage": true},				
+				{"name": "Working Days", "signalName": "DiasDeFuncionamiento", "multiply": 1, "decimals": 0,"parentSumatory": true}
+			],
+			"elements": [
+				{"name":"PLA 001.1", "id":"001", "children":[{"id": "001", "name": "CSP 001"}, {"id": "002", "name": "CSP 002"}, {"id": "003", "name": "CSP 003"}, {"id": "004", "name": "CSP 004"}, {"id": "005", "name": "CSP 005"}, {"id": "006", "name": "CSP 006"}, {"id": "007", "name": "CSP 007"}, 
+												{"id": "008", "name": "CSP 008"}, {"id": "009", "name": "CSP 009"}, {"id": "010", "name": "CSP 010"}, {"id": "011", "name": "CSP 011"}]},
+				{"name":"PLA 001.2", "id":"002", "children":[{"id": "012", "name": "CSP 012"}, {"id": "013", "name": "CSP 013"}, {"id": "014", "name": "CSP 014"}, {"id": "015", "name": "CSP 015"}, {"id": "016", "name": "CSP 016"}, {"id": "017", "name": "CSP 017"}, {"id": "018", "name": "CSP 018"}, 
+												{"id": "019", "name": "CSP 019"}, {"id": "020", "name": "CSP 020"}, {"id": "021", "name": "CSP 021"}, {"id": "022", "name": "CSP 022"}]},
+				{"name":"PLA 002.1", "id":"003", "children":[{"id": "023", "name": "CSP 023"}, {"id": "024", "name": "CSP 024"}, {"id": "025", "name": "CSP 025"}, {"id": "026", "name": "CSP 026"}, {"id": "027", "name": "CSP 027"}, {"id": "028", "name": "CSP 028"}, {"id": "029", "name": "CSP 029"}, 
+												{"id": "030", "name": "CSP 030"}, {"id": "031", "name": "CSP 031"}, {"id": "032", "name": "CSP 032"}, {"id": "033", "name": "CSP 033"}]},
+				{"name":"PLA 002.2", "id":"004", "children":[{"id": "034", "name": "CSP 034"}, {"id": "035", "name": "CSP 035"}, {"id": "036", "name": "CSP 036"}, {"id": "037", "name": "CSP 037"}, {"id": "038", "name": "CSP 038"}, {"id": "039", "name": "CSP 039"}, {"id": "040", "name": "CSP 040"}, 
+												{"id": "041", "name": "CSP 041"}, {"id": "042", "name": "CSP 042"}, {"id": "043", "name": "CSP 043"}, {"id": "044", "name": "CSP 044"}]},
+				{"name":"PLA 003.1", "id":"005", "children":[{"id": "045", "name": "CSP 045"}, {"id": "046", "name": "CSP 046"}, {"id": "047", "name": "CSP 047"}, {"id": "048", "name": "CSP 048"}, {"id": "049", "name": "CSP 049"}, {"id": "050", "name": "CSP 050"}, {"id": "051", "name": "CSP 051"}, 
+												{"id": "052", "name": "CSP 052"}, {"id": "053", "name": "CSP 053"}, {"id": "054", "name": "CSP 054"}, {"id": "055", "name": "CSP 055"}]},
+				{"name":"PLA 003.2", "id":"006", "children":[{"id": "056", "name": "CSP 056"}, {"id": "057", "name": "CSP 057"}, {"id": "058", "name": "CSP 058"}, {"id": "059", "name": "CSP 059"}, {"id": "060", "name": "CSP 060"}, {"id": "061", "name": "CSP 061"}, {"id": "062", "name": "CSP 062"}, 
+												{"id": "063", "name": "CSP 063"}, {"id": "064", "name": "CSP 064"}, {"id": "065", "name": "CSP 065"}, {"id": "066", "name": "CSP 066"}]},
+				{"name":"PLA 004.1", "id":"007", "children":[{"id": "067", "name": "CSP 067"}, {"id": "068", "name": "CSP 068"}, {"id": "069", "name": "CSP 069"}, {"id": "070", "name": "CSP 070"}, {"id": "071", "name": "CSP 071"}, {"id": "072", "name": "CSP 072"}, {"id": "073", "name": "CSP 073"}, 
+												{"id": "074", "name": "CSP 074"}, {"id": "075", "name": "CSP 075"}, {"id": "076", "name": "CSP 076"}, {"id": "077", "name": "CSP 077"}]},
+				{"name":"PLA 004.2", "id":"008", "children":[{"id": "078", "name": "CSP 078"}, {"id": "079", "name": "CSP 079"}, {"id": "080", "name": "CSP 080"}, {"id": "081", "name": "CSP 081"}, {"id": "082", "name": "CSP 082"}, {"id": "083", "name": "CSP 083"}, {"id": "084", "name": "CSP 084"}, 
+												{"id": "085", "name": "CSP 085"}, {"id": "086", "name": "CSP 086"}, {"id": "087", "name": "CSP 087"}, {"id": "088", "name": "CSP 088"}]}
+			]           
+		},
+		"Meteo": {
+			"signals": [
+				{"name": "Wind Speed (m/s)", "signalName": "Vwind", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "Wind Direction (º)", "signalName": "DirWin", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "Temperature (ºC)", "signalName": "Termo", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "Hygrometer (%)", "signalName": "Higro", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "Pyranometer (W/m^2)", "signalName": "Piranometro", "multiply": 1, "decimals": 1,"parentAverage": true}
+			],
+			"elements": [
+				{"name":"Meteo", "id":"001", "children":[{"id": "001", "name": "Meteo 001"}]}
+			]            
+		},		
+		"MET": {
+			"signals": [
+				{"name": "Wind Speed (m/s)", "signalName": "Wind", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "Radiation (W/m^2)", "signalName": "Radiation", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "T Cell (º)", "signalName": "TCell", "multiply": 1, "decimals": 0,"parentAverage": true},
+				{"name": "R1 (W/m^2)", "signalName": "R1", "multiply": 1, "decimals": 1,"parentAverage": true},
+				{"name": "R2 (W/m^2)", "signalName": "R2", "multiply": 1, "decimals": 1,"parentAverage": true}
+			],
+			"elements": [
+				{"name":"MET", "id":"001", "children":[
+												{"id": "001", "name": "Met 001"},
+												{"id": "002", "name": "Met 002"},
+												{"id": "003", "name": "Met 003"},
+												{"id": "004", "name": "Met 004"},
+												{"id": "005", "name": "Met 005"}
+												]}
+			]            
+		}
+    },
+	
+	
+	
+	
+    {
+        "asset": "SOLAR_Espejo",
+        "InvSMA": {
+            "signals": [
+                {"name": "Active P. (kW)", "signalName": "Pac", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Power (kW)", "signalName": "Ppv", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "AC Voltage 1 (V)", "signalName": "VacL1-L2", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "AC Voltage 2 (V)", "signalName": "VacL2-L3", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "AC Voltage 3 (V)", "signalName": "VacL3-L1", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "DC Voltage (V)", "signalName": "Upv", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "AC Current (A)", "signalName": "Iac", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current (A)", "signalName": "Ipv", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "Frequency (Hz)", "signalName": "Fac", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "Temperature (ºC)", "signalName": "TempKk", "multiply": 1, "decimals": 2,"parentAverage": true}
+            ],
+            "elements": [
+                {"name":"CT 001", "id":"001", "children":[	{"id": "001", "name": "Inv 001"},
+                                                            {"id": "002", "name": "Inv 002"},
+                                                            {"id": "003", "name": "Inv 003"},
+                                                            {"id": "011", "name": "Inv 011"},
+                                                            {"id": "012", "name": "Inv 012"},
+                                                            {"id": "013", "name": "Inv 013"}]},
+                {"name":"CT 002", "id":"002", "children":[	{"id": "004", "name": "Inv 004"},
+                                                            {"id": "005", "name": "Inv 005"},
+                                                            {"id": "006", "name": "Inv 006"},
+                                                            {"id": "010", "name": "Inv 010"},
+                                                            {"id": "014", "name": "Inv 014"},
+                                                            {"id": "015", "name": "Inv 015"}]},
+                {"name":"CT 003", "id":"003", "children":[	{"id": "007", "name": "Inv 007"},
+                                                            {"id": "008", "name": "Inv 008"},
+                                                            {"id": "009", "name": "Inv 009"},
+                                                            {"id": "016", "name": "Inv 016"},
+                                                            {"id": "017", "name": "Inv 017"},
+                                                            {"id": "018", "name": "Inv 018"},
+                                                            {"id": "019", "name": "Inv 019"}]}
+            ]            
+        },
+        "MeterSMA": {
+            "signals": [
+                {"name": "Active P. (kW)", "signalName": "Active", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Power (kW)", "signalName": "Ppv", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "AC Voltage 1 (V)", "signalName": "Ipv", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "AC Voltage 2 (V)", "signalName": "Upv", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "AC Voltage 3 (V)", "signalName": "Upv0", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "DC Voltage (V)", "signalName": "Pac", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "AC Current 1 (A)", "signalName": "Iac", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "AC Current 2 (A)", "signalName": "VacL1-L2", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "AC Current 3 (A)", "signalName": "VacL2-L3", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current (A)", "signalName": "TempKk", "multiply": 1, "decimals": 2,"parentSumatory": true}
+            ],
+            "elements": [
+                {"name":"CT 001", "id":"001", "children":[	{"id": "001", "name": "Meter 001"},
+                                                            {"id": "002", "name": "Meter 002"},
+                                                            {"id": "003", "name": "Meter 003"},
+                                                            {"id": "011", "name": "Meter 011"},
+                                                            {"id": "012", "name": "Meter 012"},
+                                                            {"id": "013", "name": "Meter 013"}]},
+                {"name":"CT 002", "id":"002", "children":[	{"id": "004", "name": "Meter 004"},
+                                                            {"id": "005", "name": "Meter 005"},
+                                                            {"id": "006", "name": "Meter 006"},
+                                                            {"id": "010", "name": "Meter 010"},
+                                                            {"id": "014", "name": "Meter 014"},
+                                                            {"id": "015", "name": "Meter 015"}]},
+                {"name":"CT 003", "id":"003", "children":[	{"id": "007", "name": "Meter 007"},
+                                                            {"id": "008", "name": "Meter 008"},
+                                                            {"id": "009", "name": "Meter 009"},
+                                                            {"id": "016", "name": "Meter 016"},
+                                                            {"id": "017", "name": "Meter 017"},
+                                                            {"id": "018", "name": "Meter 018"},
+                                                            {"id": "019", "name": "Meter 019"}]}
+            ]            
+        },
+        "SbSMA": {
+            "hierarchy":true,
+            "signals": [
+                {"name": "DC Current 1 (A)", "signalName": "IString1", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current 2 (A)", "signalName": "IString2", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current 3 (A)", "signalName": "IString3", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current 4 (A)", "signalName": "IString4", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current 5 (A)", "signalName": "IString5", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current 6 (A)", "signalName": "IString6", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current 7 (A)", "signalName": "IString7", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "DC Current 8 (A)", "signalName": "IString8", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "Error", "signalName": "Fehler"},
+                {"name": "Estado", "signalName": "Status"}
+            ],
+            "elements": [
+                {"name":"Inv 001", "id":"001", "children":[	{"id": "001", "name": "SMU 01.1"},
+                                                            {"id": "002", "name": "SMU 01.2"},
+                                                            {"id": "003", "name": "SMU 01.3"}]},
+                {"name":"Inv 002", "id":"002", "children":[	{"id": "001", "name": "SMU 02.1"},
+                                                            {"id": "002", "name": "SMU 02.2"},
+                                                            {"id": "003", "name": "SMU 02.3"}]},
+                {"name":"Inv 003", "id":"003", "children":[	{"id": "001", "name": "SMU 03.1"},
+                                                            {"id": "002", "name": "SMU 03.2"},
+                                                            {"id": "003", "name": "SMU 03.3"}]},
+                {"name":"Inv 004", "id":"004", "children":[	{"id": "001", "name": "SMU 04.1"},
+                                                            {"id": "002", "name": "SMU 04.2"},
+                                                            {"id": "003", "name": "SMU 04.3"}]},
+                {"name":"Inv 005", "id":"005", "children":[	{"id": "001", "name": "SMU 05.1"},
+                                                            {"id": "002", "name": "SMU 05.2"},
+                                                            {"id": "003", "name": "SMU 05.3"}]},
+                {"name":"Inv 006", "id":"006", "children":[	{"id": "001", "name": "SMU 06.1"},
+                                                            {"id": "002", "name": "SMU 06.2"},
+                                                            {"id": "003", "name": "SMU 06.3"}]},
+                {"name":"Inv 007", "id":"007", "children":[	{"id": "001", "name": "SMU 07.1"},
+                                                            {"id": "002", "name": "SMU 07.2"},
+                                                            {"id": "003", "name": "SMU 07.3"}]},
+                {"name":"Inv 008", "id":"008", "children":[	{"id": "001", "name": "SMU 08.1"},
+                                                            {"id": "002", "name": "SMU 08.2"},
+                                                            {"id": "003", "name": "SMU 08.3"}]},
+                {"name":"Inv 009", "id":"009", "children":[	{"id": "001", "name": "SMU 09.1"},
+                                                            {"id": "002", "name": "SMU 09.2"},
+                                                            {"id": "003", "name": "SMU 09.3"}]},
+                {"name":"Inv 010", "id":"010", "children":[	{"id": "001", "name": "SMU 10.1"},
+                                                            {"id": "002", "name": "SMU 10.2"},
+                                                            {"id": "003", "name": "SMU 10.3"}]},
+                {"name":"Inv 011", "id":"011", "children":[	{"id": "001", "name": "SMU 11.1"},
+                                                            {"id": "002", "name": "SMU 11.2"},
+                                                            {"id": "003", "name": "SMU 11.3"}]},
+                {"name":"Inv 012", "id":"012", "children":[	{"id": "001", "name": "SMU 12.1"},
+                                                            {"id": "002", "name": "SMU 12.2"},
+                                                            {"id": "003", "name": "SMU 12.3"}]},
+                {"name":"Inv 013", "id":"013", "children":[	{"id": "001", "name": "SMU 13.1"},
+                                                            {"id": "002", "name": "SMU 13.2"},
+                                                            {"id": "003", "name": "SMU 13.3"}]},
+                {"name":"Inv 014", "id":"014", "children":[	{"id": "001", "name": "SMU 14.1"},
+                                                            {"id": "002", "name": "SMU 14.2"},
+                                                            {"id": "003", "name": "SMU 14.3"}]},
+                {"name":"Inv 015", "id":"015", "children":[	{"id": "001", "name": "SMU 15.1"},
+                                                            {"id": "002", "name": "SMU 15.2"},
+                                                            {"id": "003", "name": "SMU 15.3"}]},
+                {"name":"Inv 016", "id":"016", "children":[	{"id": "001", "name": "SMU 16.1"},
+                                                            {"id": "002", "name": "SMU 16.2"},
+                                                            {"id": "003", "name": "SMU 16.3"}]},
+                {"name":"Inv 017", "id":"017", "children":[	{"id": "001", "name": "SMU 17.1"},
+                                                            {"id": "002", "name": "SMU 17.2"},
+                                                            {"id": "003", "name": "SMU 17.3"}]},
+                {"name":"Inv 018", "id":"018", "children":[	{"id": "001", "name": "SMU 18.1"},
+                                                            {"id": "002", "name": "SMU 18.2"},
+                                                            {"id": "003", "name": "SMU 18.3"}]},
+                {"name":"Inv 019", "id":"019", "children":[	{"id": "001", "name": "SMU 19.1"},
+                                                            {"id": "002", "name": "SMU 19.2"},
+                                                            {"id": "003", "name": "SMU 19.3"}]}
+            ]       
+        },
+        "Meteo": {
+            "signals": [
+                {"name": "Wind Speed (m/s)", "signalName": "WindSpeed", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "Wind Direction (º)", "signalName": "WindDirection", "multiply": 1, "decimals": 2,"parentSumatory": true},
+                {"name": "Temperature (ºC)", "signalName": "Temperature", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "Tilt Irradiance (W/m^2)", "signalName": "IrradianceTilt", "multiply": 1, "decimals": 2,"parentAverage": true},
+                {"name": "Pyranometer (W/m^2)", "signalName": "Pyranometer", "multiply": 1, "decimals": 2,"parentAverage": true},
+				{"name": "Hygrometer (%)", "signalName": "Hygrometer", "multiply": 1, "decimals": 2,"parentAverage": true}
+            ],
+            "elements": [
+                {"name":"Espejo", "id":"001", "children":[{"id": "001", "name": "Meteo 001"}]}
+            ]            
+        }
+    }]    
+}

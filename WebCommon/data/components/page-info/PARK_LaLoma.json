@@ -1,0 +1,134 @@
+{
+    "images":[
+        "IMG_3902.jpg",
+        "IMG_9273.jpg",
+        "IMG_3925.jpg",
+        "IMG_8157.jpg"
+    ],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PE La Loma",
+                    "Power Rate": "36000 kW",
+                    "Elements": "12 turbines Model Sinovel SL3000 3000 kW",
+                    "Coordenates UTM": "X: 234555 ; Y: 4567890",
+                    "Grid Connection": "SET La Loma"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "N/A",
+                    "Zone": "Norte",
+                    "Voltage (kV)": "N/A"
+                },
+                "GRID INFO TSO": {
+                    "TSO Node": "Valdeconejos",
+                    "Zone": "Nordeste",
+                    "Voltage (kV)": "220"
+                },
+                "TSO & OM": {
+                    "TSO CONTROL ROOMS": [
+                        "CECRE (Centro control renovable) 912 345 678 cecre@ree.es",
+                        "CECOEL (Centro control de eléctrico) 912 345 678 cecoel@ree.es",
+                        "CECORE (Centro control de red) 912 345 678 cecore@ree.es",
+                        "Run Down TSO 916 508 600 pdescargos@ree.es"
+                    ],
+                    "OM - ELECTRICAL WTG": [
+                        "On-Call  Electrical Substation & HVL ELECNOR reten@elenor.com 916 508 600",
+                        "On-Call  0&M WTG GPS reten@gpse.com 612 345 245",
+                        "Surveillance WTG SINOVEL sinovel@sinovel.com 688 999 111",
+                        "Electrical Control room - Upstream SET Valdeconejos GAMESA A.T. telemando@gamesacorp.com 948 959 444",
+                        "Control Room 1 PE Hiperión II Axpo despachoaxpo@egl.eu 912 345 678"
+                    ]
+                }
+            },
+            "right": {
+                "Communications Main Line": {
+                    "Provider": "IBERBANDA",
+                    "Phone ": "900 456 321 (OPTION 1)",
+                    "Call Center Time (Breakdowns)": "07:00 - 21:00h",
+                    "IP router": "87.10.34.172",
+                    "ID Service": "DEU-0054",
+                    "Contract Company": "DANTA S.A.",
+                    "CIF": "A-344555",
+                    "Other information": "Phone line 976 345 789"
+                },
+                "Communications Backup Line": {
+                    "Provider": "EMBOU",
+                    "Phone": "900 456 321 (OPTION 1)",
+                    "Call Center Time (Breakdowns)": "07:00 - 21:00h",
+                    "IP router/equipment (Provider)": "87.10.34.172",
+                    "ID Service": "DEU-0054",
+                    "Contract Company": "DANTA S.A.",
+                    "CIF": "A-344555",
+                    "Other information": "Phone line 976 345 789"
+                },
+                "HSE": {
+                    "Surveillance Company (on site)": "GIS",
+                    "Patrol time (on site)": "23:00 - 04:00h",
+                    "Patrol phone (on site)": "617 872 877",
+                    "Security Company (Fire&Intrusion)": "Tyco"
+                },
+                "O&M Contacts":{
+                    "Company": [
+                        "Ingeteam S.A.",
+                        "C/ Arriaga 3, Bloque A, Esc H , 1º 3ª, 34982, Alcañiz, Teruel, España",
+                        "945 345 678"
+                    ],
+                    "Contact Person 1": [
+                        "Jefe de O&M",
+                        "Andrés García agarcia@comiolica.es 612 456 789"                
+                    ]            
+                },
+                "Owner contact": {
+                    "Company": "Comiolica S.L.",
+                    "Address": "C/ Arriaga 3, Bloque A, Esc H , 1º 3ª, 34982, Alcañiz, Teruel, España"
+                }
+            }
+        }        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+

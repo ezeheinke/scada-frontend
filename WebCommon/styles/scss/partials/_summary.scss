@@ -1,0 +1,22 @@
+#main-view{
+  &.theme-maintainer{
+    #summary{
+      @include summary-with-theme($bgDarkPurple, $lineLightPurple);
+    }
+  }
+  &.theme-operator{
+    #summary{
+      @include summary-with-theme($bgDarkBlue, $lineLightBlue);
+    }
+  }
+  &.theme-owner{
+    #summary{
+      @include summary-with-theme($bgDarkGreen, $lineLightGreen);
+    }
+  }
+  &.theme-admin{
+    #summary{
+      @include summary-with-theme($themeGreen, $successGreen);
+    }
+  }
+}

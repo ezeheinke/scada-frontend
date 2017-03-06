@@ -1,0 +1,35 @@
+{
+    "images":["IMG_Castelnou1.jpg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PS Castelnou",
+                    "Power Rate": "1.100 kW",
+                    "Elements": "11 inverters Solarmax 100C (100kW) - 408 panels",
+                    "Grid Connection": "Centro Transformación PSF Castelnou",
+                    "Technology": "Fixed",
+                    "Year": "2008"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "LAMT Renfe-Escatrón 25kV",
+                    "Zone": "Castelnou (Teruel)",
+                    "Voltage (kV)": "25 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M": {
+                    "Juan Carlos Crespo (638316638)": "sinergiaom.vinaceite@jorgesl.com",
+                    "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }        
+    }
+}

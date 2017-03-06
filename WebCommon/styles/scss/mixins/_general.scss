@@ -1,0 +1,225 @@
+@mixin switch-toggle($tintColor) {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  font-weight: 400;
+  input{
+    opacity: 0;
+    position: absolute;
+  }
+  input + span {
+    position: relative;
+    display: inline-block;
+    width: 1.65em;
+    height: 1em;
+    background: $bgWhite;
+    box-shadow: inset 0 0 0 1px $shadowGray;
+    border-radius: 0.5em;
+    vertical-align: -0.15em;
+    transition: all 0.40s cubic-bezier(.17,.67,.43,.98);
+    margin-right: 5px;
+  }
+  &:active input + span, input + span:active{
+    box-shadow: inset 0 0 0 0.73em $shadowGray;
+  }
+  input + span:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.875em;
+    height: 0.875em;
+    border-radius: 0.4375em;
+    top: 1px;
+    left: 1px;
+    background: $bgWhite;
+    box-shadow: inset 0 0 0 0.03em rgba($shadowBlack, 0.1),
+                0 0 0.05em rgba($shadowBlack, 0.05),
+                0 0.1em 0.2em rgba($shadowBlack, 0.2);
+    transition: all 0.25s ease-out;
+  }
+  &:active input + span:after, input + span:active:after {
+    width: 1.15em;
+  }
+  input:checked + span{
+    box-shadow: inset 0 0 0 0.73em $tintColor;
+    &:after{
+      left: 0.7125em;
+    }
+  }
+  &:active input:checked + span:after, input:checked + span:active:after {
+    left: 0.4375em;
+  }
+
+  input:focus + span:after {
+    box-shadow: inset 0 0 0 0.03em rgba($shadowBlack, 0.15),
+                0 0 0.05em rgba($shadowBlack, 0.08),
+                0 0.1em 0.2em rgba($shadowBlack, 0.3);
+    background: $bgWhite;
+  }
+  input:focus + span {
+    box-shadow: inset 0 0 0 1px $shadowGray;
+  }
+
+  input:focus:checked + span {
+    box-shadow: inset 0 0 0 0.73em $tintColor;
+  }
+  &:hover input:focus + span:after {
+    box-shadow: inset 0 0 0 0.03em rgba($shadowBlack, 0.1),
+                0 0 0.05em rgba($shadowBlack, 0.05),
+                0 0.1em 0.2em rgba($shadowBlack, 0.2);
+    background: $bgWhite;
+  }
+  &:hover input:focus + span {
+    box-shadow: inset 0 0 0 1px $shadowGray;
+  }
+  &:hover input:focus:checked + span {
+    box-shadow: inset 0 0 0 0.73em $tintColor;
+  }
+}
+
+@mixin custom-scrollbar($bgColor, $tintColor, $activeColor){
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba($bgColor, 0.9);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $tintColor;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-clip: content-box;
+    &:hover, &:active{
+      background-color: $activeColor;
+    }
+  }
+}
+
+@mixin custom-table($smallColumns, $largeColumns, $tbodyHeight){
+  $smallColumnWidth: 100% / ($smallColumns + $largeColumns * 1.5);
+  border-bottom: 1px solid $lineGray;
+  margin-bottom: 0px;
+  thead{
+    display: block;
+    tr{
+      display: block;
+      width: 100%;
+      font-size: 0px;
+      th{
+        border-bottom-width: 1px;
+        font-size: 18px;
+        font-weight: 300;
+        padding: 8px 10px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include transition-intent();
+        &.large{
+          width: $smallColumnWidth * 1.5;
+        }
+        &:not(.large){
+          width: $smallColumnWidth;
+        }
+        &.sortable{
+          cursor: pointer;
+          img{
+            width: 15px;
+            @include transition-normal();
+            &.direction-desc {
+              transform: rotateX(0deg);    
+            }
+            &.direction-asc {
+              transform: rotateX(-180deg);    
+            }
+          }
+        }
+      }
+    }
+  }
+  tbody{
+    display: block;
+    max-height: $tbodyHeight;
+    overflow-y: auto; 
+    @include custom-scrollbar($bgWhite, $lineGray, $textMiddleGray);
+    tr{
+      display: block;
+      width: 100%;
+      font-size: 0px;
+      &:first-of-type{
+        td{
+          border-top: none;
+        }
+      }
+      &:nth-of-type(odd){
+        background-color: $bgGray;
+      }
+      td{
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 24px;
+        vertical-align: middle;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .data-bar{
+          height: 7px;
+          border-radius: 7px;
+          background: $lineLightGray;
+          width: 100px;
+          display: inline-block;
+          margin-right: 5px;
+          overflow: hidden;
+          font-size: 0px;
+          line-height: 0px;
+          span{
+            display: inline-block;
+            height: 100%;
+            @include transition-slow();
+          }
+        }
+        &.large{
+          width: $smallColumnWidth * 1.5;
+        }
+        &:not(.large){
+          width: $smallColumnWidth;
+        }
+        .color-block-success{
+          @include color-block($successGreen);
+        }
+        .color-block-alert{
+          @include color-block($warningYellow);
+        }
+        .color-block-error{
+          @include color-block($errorRed);
+        }
+      }
+    }
+  }
+}
+
+@mixin color-block($themeColor){
+  color: $themeColor;
+  height: 24px;
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  border: 2px solid $themeColor;
+  padding: 2px 8px 4px 8px;
+  width: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+

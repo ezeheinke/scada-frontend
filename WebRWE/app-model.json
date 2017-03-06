@@ -1,0 +1,427 @@
+{
+    "nodes": [
+        {
+            "id": "NODE_Oncala",
+            "name": "ONCALA 220kV",
+            "setIds": ["SET_Aldehuelas"]
+        },
+        {
+            "id": "NODE_Trevago",
+            "name": "TRÉVAGO 220kV",
+            "setIds": [
+                "SET_Camino",
+                "SET_Trevago"
+            ]
+        },
+        {
+            "id": "NODE_LanzasAgudas",
+            "name": "LANZASAGUDAS 220kV",
+            "setIds": ["SET_Grisel"]
+        },
+        {
+            "id": "NODE_Maria",
+            "name": "MARÍA 220kV",
+            "setIds": ["SET_Ventero"]
+        },
+        {
+            "id": "NODE_MonteTorrero",
+            "name": "MONTETORRERO 220kV",
+            "setIds": ["SET_Muel"]
+        },
+        {
+            "id": "NODE_Gurrea",
+            "name": "GURREA 220kV",
+            "setIds": ["SET_RioGallego"]
+        },
+        {
+            "id": "NODE_Olmedilla",
+            "name": "OLMEDILLA 400kV",
+            "setIds": ["SET_Lanternoso"]
+        },
+        {
+            "id": "NODE_Facinas",
+            "name": "FACINAS 220kV",
+            "setIds": ["SET_Siglos"]
+        },
+        {
+            "id": "NODE_Lastras",
+            "name": "LASTRAS 400kV",
+            "setIds": [
+                "SET_Cepeda",
+                "SET_LaMora"
+            ]
+        },
+        {
+            "id": "NODE_Sienra",
+            "name": "SIENRA 220kV",
+            "setIds": [
+                "SET_Chomba"
+            ]
+        },
+        {
+            "id": "NODE_Romica",
+            "name": "ROMICA 400kV",
+            "setIds": ["SET_Villalgordo"]
+        },
+        {
+            "id": "NODE_Escucha",
+            "name": "ESCUCHA 220kV",
+            "setIds": ["SET_LaLoma"]
+        },
+        {
+            "id": "NODE_S5",
+            "name": "HUÉNEJA 400kV",
+            "setIds": ["SET_SetS5"]
+        }
+    ],
+    
+    "sets": [{
+        "id": "SET_Aldehuelas",
+        "name": "Aldehuelas",
+        "assetIds": [
+            "PARK_Aldehuelas",
+            "PARK_Urano"
+        ]
+    }, {
+        "id": "SET_Camino",
+        "name": "Camino",
+        "assetIds": ["PARK_Juno"]
+    }, {
+        "id": "SET_Trevago",
+        "name": "Trévago",
+        "assetIds": ["PARK_Luna"]
+    }, {
+        "id": "SET_Grisel",
+        "name": "Grisel",
+        "assetIds": ["PARK_Grisel"]
+    }, {
+        "id": "SET_Ventero",
+        "name": "Ventero",
+        "assetIds": [
+            "PARK_AcampoArmijo",
+            "PARK_BosqueAlto",
+            "PARK_LosLabrados",
+            "PARK_PlanaDeLaBalsa",
+            "PARK_PlanaDeMaria",
+            "PARK_PlanaDeZaragoza"
+        ]
+    }, {
+        "id": "SET_Muel",
+        "name": "Muel",
+        "assetIds": ["PARK_Muel"]
+    }, {
+        "id": "SET_RioGallego",
+        "name": "Río Gallego",
+        "assetIds": ["PARK_RioGallego"]
+    }, {
+        "id": "SET_Lanternoso",
+        "name": "Lanternoso",
+        "assetIds": ["PARK_Lanternoso"]
+    }, {
+        "id": "SET_Siglos",
+        "name": "Siglos",
+        "assetIds": [
+            "PARK_Bancal",
+            "PARK_LosSiglos"
+        ]
+    }, {
+        "id": "SET_Villalgordo",
+        "name": "Villalgordo",
+        "assetIds": ["HYDRO_Villalgordo"]
+    }, {
+        "id": "SET_Cepeda",
+        "name": "Cepeda",
+        "assetIds": ["HYDRO_Cepeda"]
+    }, {
+        "id": "SET_Chomba",
+        "name": "Chomba",
+        "assetIds": ["HYDRO_Chomba"]
+    }, {
+        "id": "SET_LaMora",
+        "name": "La Mora",
+        "assetIds": ["HYDRO_LaMora"]
+    }, {
+        "id": "SET_LaLoma",
+        "name": "La Loma",
+        "assetIds": ["PARK_LaLoma"]
+    }, {
+        "id": "SET_SetS5",
+        "name": "Set S5",
+        "assetIds": ["SOLAR_Andasol3"]
+    }],
+    "uProgs": [
+        {"uProgId": "UPROG_EAEREG", "uProgName": "EAEREG", "uProgAssets":[  {"name": "P.E. Acampo Armijo", "boundaryPoint":"EDA326H471", "id": "PARK_AcampoArmijo"}, 
+                                                                            {"name": "P.E. Bosque Alto", "boundaryPoint":"EDA324H471","id": "PARK_BosqueAlto"}, 
+                                                                            {"name": "P.E. Bancal", "boundaryPoint":"EDZ240H471", "id": "PARK_Bancal"},
+                                                                            {"name": "P.E. La Ciesma De Grisel", "boundaryPoint":"EDA590H271", "id": "PARK_Grisel"},
+                                                                            {"name": "P.E. Río Gallego", "boundaryPoint":"EDA289H471", "id": "PARK_RioGallego"},
+                                                                            {"name": "P.E. Los Labrados", "boundaryPoint":"EDA327H471", "id": "PARK_LosLabrados"},
+                                                                            {"name": "P.E. Lanternoso", "boundaryPoint":"EDA452H371", "id": "PARK_Lanternoso"},
+                                                                            {"name": "P.E. Muel", "boundaryPoint":"EDA194H371", "id": "PARK_Muel"},
+                                                                            {"name": "P.E. Plana De La Balsa", "boundaryPoint":"EDA328H471", "id": "PARK_PlanaDeLaBalsa"},
+                                                                            {"name": "P.E. Plana De María", "boundaryPoint":"EDA325H471", "id": "PARK_PlanaDeMaria"},
+                                                                            {"name": "P.E. Plana De Zaragoza", "boundaryPoint":"EDA329H471", "id": "PARK_PlanaDeZaragoza"},
+                                                                            {"name": "P.E. Siglos", "boundaryPoint":"EDZ241H471", "id": "PARK_LosSiglos"}]},
+        {"uProgId": "UPROG_EDANSA", "uProgName": "EDANSA", "uProgAssets":  [{"name": "P.E. Juno", "boundaryPoint":"EDA147H471", "id": "PARK_Juno"},
+                                                                            {"name": "P.E. La Luna", "boundaryPoint":"EDA146H471", "id": "PARK_Luna"}]} 
+    ],
+    "assets": [{
+        "id": "PARK_Aldehuelas",
+        "name": "PE Aldehuelas",
+        "dbProduccionName": "Aldehuelas",
+        "dbPrediccionGraficaName": "P.E. Aldehuelas",
+        "powerAds": true,
+        "eventSourceName": "PE Aldehuelas",
+        "coords": {
+            "latitude": 42.001684,
+            "longitude": -2.4399121317915373
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_Urano",
+        "name": "PE Urano",
+        "dbProduccionName": "Urano",
+        "dbPrediccionGraficaName": "P.E. Urano",
+        "powerAds": true,
+        "eventSourceName": "PE Urano",
+        "coords": {
+            "latitude": 42.029562,
+            "longitude": -2.3807641704580065
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_Juno",
+        "name": "PE Juno",
+        "dbProduccionName":"Camino tm1",
+        "dbPrediccionGraficaName": "P.E. Juno",
+        "powerAds": true,
+        "eventSourceName": "PE Juno",
+        "coords": {
+            "latitude": 41.841315,
+            "longitude": -2.2511381592150803
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_Luna",
+        "name": "PE Luna",
+        "dbProduccionName":"Luna",
+        "dbPrediccionGraficaName": "P.E. Luna",
+        "powerAds": true,
+        "eventSourceName": "PE Luna",
+        "coords": {
+            "latitude": 41.839947,
+            "longitude": -2.145403780829492
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_Grisel",
+        "name": "PE Grisel",
+        "dbProduccionName":"Grisel I+II",
+        "dbPrediccionGraficaName": "P.E. Grisel (I+II)",
+        "powerAds": true,
+        "eventSourceName": "PE Grisel",
+        "coords": {
+            "latitude": 41.866635,
+            "longitude": -1.7257185365624161
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_AcampoArmijo",
+        "name": "PE Acampo Armijo",
+        "dbProduccionName":"ACampo",
+        "dbPrediccionGraficaName": "P.E. Acampo Armijo",
+        "powerAds": true,
+        "eventSourceName": "PE AcampoArmijo",
+        "coords": {
+            "latitude": 41.521796,
+            "longitude": -0.8990875514175616
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_BosqueAlto",
+        "name": "PE Bosque Alto",
+        "dbProduccionName" :"Bosque Alto tm1",
+        "dbPrediccionGraficaName": "P.E. Bosque Alto",
+        "powerAds": true,
+        "eventSourceName": "PE BosqueAlto",
+        "coords": {
+            "latitude": 41.485567,
+            "longitude": -0.920189730458294
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_LosLabrados",
+        "name": "PE Los Labrados",
+        "dbProduccionName":"Labrados",
+        "dbPrediccionGraficaName": "P.E. Los Labrados",
+        "powerAds": true,
+        "eventSourceName": "PE LosLabrados",
+        "coords": {
+            "latitude": 41.510151,
+            "longitude": -0.9289406456691176
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_PlanaDeLaBalsa",
+        "name": "PE Plana de la Balsa",
+        "dbProduccionName":"LaBalsa",
+        "dbPrediccionGraficaName": "P.E. Plana de la Balsa",
+        "powerAds": true,
+        "eventSourceName": "PE PlanaDeLaBalsa",
+        "coords": {
+            "latitude": 41.514633,
+            "longitude": -0.9402416339642428
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_PlanaDeMaria",
+        "name": "PE Plana de María",
+        "dbProduccionName":"Plana de Maria tm1",
+        "dbPrediccionGraficaName": "P.E. Plana de Maria",
+        "powerAds": true,
+        "eventSourceName": "PE PlanaDeMaria",
+        "coords": {
+            "latitude": 41.482473,
+            "longitude": -0.9429375862818641
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_PlanaDeZaragoza",
+        "name": "PE Plana de Zaragoza",
+        "dbProduccionName":"PZaragoza",
+        "dbPrediccionGraficaName": "P.E. Plana de Zaragoza",
+        "powerAds": true,
+        "eventSourceName": "PE PlanaDeZaragoza",
+        "coords": {
+            "latitude": 41.509171,
+            "longitude": -0.9095968451912468
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_Muel",
+        "name": "PE Muel",
+        "dbProduccionName":"Muel",
+        "dbPrediccionGraficaName": "P.E. Muel",
+        "powerAds": true,
+        "eventSourceName": "PE Muel",
+        "coords": {
+            "latitude": 41.513892,
+            "longitude": -1.132054366057982
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_RioGallego",
+        "name": "PE Río Gállego",
+        "dbProduccionName":"Rio Gallego tm1",
+        "dbPrediccionGraficaName": "P.E. Rio Gallego",
+        "powerAds": true,
+        "eventSourceName": "PE RioGallego",
+        "coords": {
+            "latitude": 42.018061,
+            "longitude": -0.6869091582970901
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_Lanternoso",
+        "name": "PE Lanternoso",
+        "dbProduccionName":"Lanternoso tm1",
+        "dbPrediccionGraficaName": "P.E. Lanternoso",
+        "powerAds": true,
+        "eventSourceName": "PE Lanternoso",
+        "coords": {
+            "latitude": 39.058216,
+            "longitude": -2.672425772870832
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_Bancal",
+        "name": "PE Bancal",
+        "dbProduccionName":"Bancal tm1",
+        "dbPrediccionGraficaName": "P.E. Bancal",
+        "powerAds": true,
+        "eventSourceName": "PE Bancal",
+        "coords": {
+            "latitude": 36.135487,
+            "longitude": -5.787547766414228
+        },
+        "controlAvailable": true
+    }, {
+        "id": "PARK_LosSiglos",
+        "name": "PE Los Siglos",
+        "dbProduccionName":"Siglos tm1",
+        "dbPrediccionGraficaName": "P.E. Siglos",
+        "powerAds": true,
+        "eventSourceName": "PE LosSiglos",
+        "coords": {
+            "latitude": 36.132351,
+            "longitude": -5.796424698188347
+        },
+        "controlAvailable": true
+    }, {
+        "id": "HYDRO_Villalgordo",
+        "name": "CH Villalgordo",
+        "dbProduccionName":"Villalgordo",
+        "dbPrediccionGraficaName": "C.H. Villalgordo",
+        "powerAds": true,
+        "eventSourceName": "CH Villalgordo",
+        "coords": {
+            "latitude": 39.294345,
+            "longitude": -2.079570626270326
+        },
+        "controlAvailable": true
+    }, {
+        "id": "HYDRO_Cepeda",
+        "name": "CH Cepeda",
+        "dbProduccionName":"Cepeda",
+        "dbPrediccionGraficaName": "C.H. Cepeda",
+        "powerAds": true,
+        "eventSourceName": "CH Cepeda",
+        "coords": {
+            "latitude": 40.426427,
+            "longitude": -5.04586254921667
+        }
+    }, {
+        "id": "HYDRO_Chomba",
+        "name": "CH Chomba",
+        "dbProduccionName": "Chomba",
+        "dbPrediccionGraficaName": "C.H. Chomba",
+        "powerAds": false,
+        "eventSourceName": "CH Chomba",
+        "coords": {
+            "latitude": 43.0997,
+            "longitude": -6.477519364991894
+        }
+    }, {
+        "id": "HYDRO_LaMora",
+        "name": "CH La Mora",
+        "dbProduccionName":"La Mora",
+        "dbPrediccionGraficaName": "C.H. La Mora",
+        "powerAds": true,
+        "eventSourceName": "CH LaMora",
+        "coords": {
+            "latitude": 40.42496,
+            "longitude": -5.033028827135258
+        }
+    }, {
+        "id": "PARK_LaLoma",
+        "name": "PE La Loma",
+        "dbProduccionName":"La Loma tm1",
+        "dbPrediccionGraficaName": "P.E. La Loma",
+        "powerAds": true,
+        "eventSourceName": "PE LaLoma",
+        "coords": {
+            "latitude": 40.763712,
+            "longitude": -0.7577821058362226
+        },
+        "controlAvailable": true
+    }, {
+        "id": "SOLAR_Andasol3",
+        "name": "CST Andasol 3",
+        "powerAds": true,
+        "eventSourceName": "CS Andasol3",
+        "coords": {
+            "latitude": 37.2376705,
+            "longitude": -3.110609
+        }
+    }]
+}

@@ -1,0 +1,45 @@
+$textWhite       : #FFFFFF;
+$textDarkGray    : #333333;
+$textMiddleGray  : #777777;
+$textLightGray   : #999999;
+
+$bgWhite         : #FFFFFF;
+$bgGray          : #F7F9F9;
+$bgMiddleGray    : #E5E7E9;
+
+$lineGray        : #CCCCCC;
+$lineLightGray   : #DDDDDD;
+
+
+$shadowGray      : #D7DBDD;
+$shadowBlack     : #000000;
+
+$toggleGreen     : hsl(130, 70%, 50%);
+
+$successGreen    : #93b940;/*old: #7ED321*/
+$warningYellow   : #edc133;/*old: #F1C40F*/
+$dangerOrange    : #F39C12;
+$errorRed        : #E74C3C;
+$infoBlue        : #3b82b6;/*old: #3498DB*/
+$noConnectionGray: #999999;
+
+$bgDarkPurple     : #352934;
+$lineLightPurple  : #604A5D;
+$textLightPurple  : #967A92;
+
+$bgDarkBlue      : #1a364a;
+$lineDarkBlue    : #1a364a;
+$lineLightBlue   : #5D6D7E;
+$textLightBlue   : #5D6D7E;
+
+$bgDarkGreen     : #304931;
+$lineLightGreen  : #5D775B;
+$textLightGreen  : #94BA90;
+
+$GEgreen : #93b940;
+$GEdarkGreen: #38633B;
+
+$themeGreen      : $GEgreen; /*darken($successGreen, 5%);*/
+$themeDarkGreen  : $GEdarkGreen; /*darken($successGreen, 15%);*/
+
+

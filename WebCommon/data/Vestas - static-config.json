@@ -1,0 +1,350 @@
+{
+    "rootView": "CCR",
+    "serverPath": "http://localhost:8090",
+    "nodes": [
+        {
+            "id": "NODE_Peares",
+            "name": "PEARES",
+            "setIds": [
+                "SET_SerraDoParamo"
+            ]
+        },
+        {
+            "id": "NODE_ArcosDeLaFrontera",
+            "name": "ARCOS DE LA FRONTERA",
+            "setIds": [
+                "SET_CortijoDeGuerra"
+            ]
+        },
+        {
+            "id": "NODE_Montetorrero",
+            "name": "MONTETORRERO",
+            "setIds": [
+                "SET_ElOlivar",
+                "SET_CabezoDeSanRoque"
+            ]
+        },
+        {
+            "id": "NODE_Urcamusa",
+            "name": "URCAMUSA",
+            "setIds": [        
+                "SET_Urcamusa"
+            ]
+        },
+        {
+            "id": "NODE_PoblaAbrera",
+            "name": "POBLA ABRERA",
+            "setIds": [
+                "SET_Veciana"
+            ]
+        },
+        {
+            "id": "NODE_MoncayoLanzasAgudas",
+            "name": "MONCAYO / LANZAS AGUDAS",
+            "setIds": [
+                "SET_TurbinaDePupal"
+            ]
+        },
+        {
+            "id": "NODE_EonDistribicion",
+            "name": "EON Distribucíon",
+            "setIds": [
+                "SET_Matamorosa"
+            ]
+        }
+    ],
+    "sets": [
+        {
+            "id": "SET_SerraDoParamo",
+            "name": "Serra do Paramo",
+            "assetIds": [
+                "PARK_SerraDoParamo"
+            ]
+        },
+        {
+            "id": "SET_CortijoDeGuerra",
+            "name": "Cortijo de Guerra",
+            "assetIds": [
+                "PARK_CortijoDeGuerra"
+            ]
+        },   
+        {
+            "id": "SET_ElOlivar",
+            "name": "El Olivar",
+            "assetIds": [
+                "PARK_LaCarracha",
+                "PARK_LaJarreta"
+            ]
+        },    
+        {
+            "id": "SET_CabezoDeSanRoque",
+            "name": "Cabezo de San Roque",
+            "assetIds": [
+                "PARK_CabezoDeSanRoque"
+            ]
+        },   
+        {
+            "id": "SET_Urcamusa",
+            "name": "Urcamusa",
+            "assetIds": [
+                "PARK_Valdecuadros"
+            ]
+        },   
+        {
+            "id": "SET_Veciana",
+            "name": "Veciana",
+            "assetIds": [
+                "PARK_AltaAnoia",
+                "PARK_Pujalt",
+                "PARK_Turo"
+            ]
+        },     
+        {
+            "id": "SET_TurbinaDePupal",
+            "name": "Turbina 1 de Pulpal",
+            "assetIds": [
+                "PARK_Pozalmuro"
+            ]
+        },
+        {
+            "id": "SET_Matamorosa",
+            "name": "Matamorosa",
+            "assetIds": [
+                "PARK_MonteCotio"
+            ]
+        }  
+    ],
+    "assets": [
+        {
+            "id": "PARK_SerraDoParamo",
+            "name": "PE Serra do Páramo",
+            "powerAds": true,            
+            "coords": {
+                "latitude": 42.766667,
+                "longitude": -7.6
+            }
+        },
+        {
+            "id": "PARK_CortijoDeGuerra",
+            "name": "PE Cortijo de Guerra",
+            "powerAds": false,  
+            "coords": {
+                "latitude": 36.53,
+                "longitude": -6.19
+            }
+        },
+        {
+            "id": "PARK_LaCarracha",
+            "name": "PE La Carracha",
+            "powerAds": false,       
+            "coords": {
+                "latitude": 41.58,
+                "longitude": -1.12
+            }
+        },
+        {
+            "id": "PARK_LaJarreta",
+            "name": "PE La Jarreta",
+            "powerAds": false,        
+            "coords": {
+                "latitude": 41.58,
+                "longitude": -1.12
+            }
+        },
+        {
+            "id": "PARK_CabezoDeSanRoque",
+            "name": "PE Cabezo de San Roque",
+            "powerAds": false, 
+            "coords": {
+                "latitude": 41.46,
+                "longitude": -1.09
+            }
+        },
+        {
+            "id": "PARK_Valdecuadros",
+            "name": "PE Valdecuadros",
+            "powerAds": false,     
+            "coords": {
+                "latitude": 41.58,
+                "longitude": -1.12
+            }
+        },
+        {
+            "id": "PARK_AltaAnoia",
+            "name": "PE Alta Anoia",
+            "powerAds": false,        
+            "coords": {
+                "latitude": 41.716681,
+                "longitude": 1.451383
+            }
+        },
+        {
+            "id": "PARK_Pujalt",
+            "name": "PE Pujalt",
+            "powerAds": false,            
+            "coords": {
+                "latitude": 41.716681,
+                "longitude": 1.451383
+            }
+        },
+        {
+            "id": "PARK_Turo",
+            "name": "PE Turó",
+            "powerAds": false,             
+            "coords": {
+                "latitude": 41.654868,
+                "longitude": 1.419663
+            }
+        },
+        {
+            "id": "PARK_Pozalmuro",
+            "name": "PE Pozalmuro",
+            "powerAds": false,            
+            "coords": {
+                "latitude": 41.77,
+                "longitude": -2.1
+            }
+        },
+        {
+            "id": "PARK_MonteCotio",
+            "name": "PE Monte Cotío",
+            "powerAds": false,            
+            "coords": {
+                "latitude": 43.46096,
+                "longitude": -3.807934
+            }
+        }
+    ],
+    "views": {
+        "CCR": {
+            "id": "CCR",
+            "viewLevel": "CCR",
+            "name": "Vestas CCR",            
+            "pages": {
+                "maintainer": [
+                ],
+                "operator": [
+                    {"id": "assets", "name": "Assets", "pageFile": "page-assets"},
+                    {"id": "events", "name": "Events", "pageFile": "page-events"}
+                ],
+                "owner": [
+                ]
+            },
+            "pagesData": {
+                "assets": {                    
+                    "tables": [{
+                        "name": "Control",
+                        "icon": "glyphicon glyphicon-tasks", 
+                        "signals": [
+                            {"name": "Active Power (kW)", "signalName": "ActivePower", "nodeSumatory": true},
+                            {"name": "Setpoint Received (kW)", "signalName": "SetpointReceived",
+                                "infoSignalName": "Setpoint Motive", "infoSignal": "SetpointMotive",
+                                "writeSignal": "SetpointApplied"},
+                            {"name": "Setpoint Applied (kW)", "signalName": "SetpointApplied"}
+                        ]
+                    },{
+                        "name": "Meteo",
+                        "icon": "glyphicon glyphicon-cloud", 
+                        "signals": [
+                                {"name": "Wind Speed (m/s)", "signalName": "WindSpeed"},
+                                {"name": "Wind Direction (º)", "signalName": "WindDirection"},
+                                {"name": "Temperature (ºC)", "signalName": "Temperature"}
+                        ]
+                    },{
+                        "name": "REE",
+                        "icon": "glyphicon glyphicon-transfer", 
+                        "signals": [
+                            {"name": "Active Power (kW)", "signalName": "ActivePower", "nodeSumatory": true},
+                            {"name": "Reactive Power (kW)", "signalName": "ReactivePower"},
+                            {"name": "Producible Power (kW)", "signalName": "ProduciblePower", "nodeSumatory": true},
+                            {"name": "H+1", "signalName": "H1Energy"},
+                            {"name": "H+2", "signalName": "H2Energy"},
+                            {"name": "H+3", "signalName": "H3Energy"},
+                            {"name": "H+4", "signalName": "H4Energy"}
+                        ]
+                    }]
+                }
+            }
+        },
+        "PARK_LaJarreta": {
+            "id": "PARK_LaJarreta",
+            "viewLevel": "ASSET",
+            "name": "PE La Jarreta",            
+            "pages": {
+                "maintainer": [
+                ],
+                "operator": [
+                    {"id": "info", "name": "Info", "pageFile": "page-info"},
+                    {"id": "control", "name": "Control", "pageFile": "page-control"}                    
+                ],
+                "owner": [
+                ]
+            },
+            "pagesData": {
+                "info": {
+                    "markers": [
+                        {"id": "PARK_LaJarreta", "type": "asset", "latitude": 40.9308, "longitude": -3.703}
+                    ],
+                    "images": [
+                        "images/slide0.jpg",
+                        "images/slide1.jpg",
+                        "images/slide2.jpg",
+                        "images/slide3.jpg",
+                        "images/slide4.jpg"
+                    ]
+                },
+                "control": {
+                    "productionGraph": {
+                        "title": "Real Time Production Overview",
+                        "yTitle": "Power (MW)",
+                        "yMax": {"signalName": "NominalPower", "multiply": 0.001},
+                        "yMin": 0,
+                        "y2Title": "Windspeed (m/s)",
+                        "y2Max": 30,
+                        "graphSignals": [
+                            {"name": "Active Power", "signalName": "ActivePower", "multiply": 0.001, "units": "MW"},
+                            {"name": "Set. Applied", "signalName": "SetpointApplied", "multiply": 0.001, "units": "MW"},
+                            {"name": "Set. Request", "signalName": "SetpointRequest", "multiply": 0.001, "units": "MW"},
+                            {"name": "WindSpeed", "yAxis": "right", "signalName": "WindSpeed", "units": "m/s"}                                                
+                        ]
+                    },
+                    "powerFactorGraph": {
+                        "title": "Real Time Power Factor Compliance",
+                        "yFormat": "cosPhi",
+                        "graphSignals": [
+                            {"name": "Cos. phi", "signalName": "CosPhi", "drawPoints": true}
+                        ],
+                        "marks": [
+                            {"name": "Cos. phi Max", "value": 0.5},
+                            {"name": "Cos. phi Min", "value": -0.75}
+                        ]
+                    },
+                    "inputSignals": [
+                        {"name": "Setpoint Applied", "signalName": "SetpointApplied", "writeSignal": "SetpointApplied", "units": "kW"},
+                        {"name": "Cos. phi reference", "signalName": "CosPhi", "writeSignal": "CosPhi", "decimals": 3}
+                    ],
+                    "displaySignals": [
+                        [
+                            {"name": "Setpoint Received", "signalName": "SetpointReceived", "units": "kW"},
+                            {"name": "Rated Active Power", "signalName": "NominalPower", "units": "kW"},
+                            {"name": "Active Power", "signalName": "ActivePower", "units": "kW"},
+                            {"name": "Reactive Power", "signalName": "ReactivePower", "units": "kW"},
+                            {"name": "Voltage R", "signalName": "VoltageR", "units": "kV"},
+                            {"name": "Cos. phi", "signalName": "CosPhi", "decimals": 3}
+                        ],
+                        [
+                            {"name": "Wind Speed", "signalName": "WindSpeed", "decimals": 2, "units": "m/s"},
+                            {"name": "Wind Direction", "signalName": "WindDirection", "units": "º"},
+                            {"name": "Temperature", "signalName": "Temperature", "decimals": 1, "units": "ºC"}
+                        ]
+                    ]
+                }
+            },
+            "servicesData":{
+                "deviceModel": {
+                    "models": ["Gamesa"]
+                }
+            }
+        }
+    }
+}

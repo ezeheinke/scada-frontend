@@ -1,0 +1,22 @@
+#main-view{
+  &.theme-maintainer{
+    .custom-table-with-theme{
+      @include table-with-theme($bgDarkPurple, $textLightPurple, $lineLightPurple);
+   }
+  }
+  &.theme-operator{
+    .custom-table-with-theme{
+      @include table-with-theme($bgDarkBlue, $textLightBlue, $lineDarkBlue);
+   }
+  }
+  &.theme-owner{
+    .custom-table-with-theme{
+      @include table-with-theme($bgDarkGreen, $textLightGreen, $lineLightGreen);
+   }
+  }
+  &.theme-admin{
+    .custom-table-with-theme{
+      @include table-with-theme($themeDarkGreen, $successGreen, $themeGreen);
+   }
+  }
+}

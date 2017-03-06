@@ -1,0 +1,163 @@
+{
+    "rootView": "CCR",
+    "serverPath": "http://localhost:8095",
+    "views": {
+        "CCR": {
+            "id": "CCR",
+            "viewLevel": "CCR",
+            "name": "DEMO CCR",            
+            "pages": {
+                 "admin": [
+                    {"id": "users", "name": "Users", "pageFile": "page-users", "icon": "icon dripicons-user-group"},
+                    {"id": "item-viewer", "name": "Item Viewer", "pageFile": "page-item-viewer", "icon": "icon dripicons-preview"}
+                ],
+                 "maintainer": [
+                    {"id": "reports", "name": "Reports", "pageFile": "page-reports-temp", "icon": "icon dripicons-inbox"}                    
+                ],
+                "operator": [
+                    {"id": "assets", "name": "Assets", "pageFile": "page-assets", "icon": "icon dripicons-network-3"},
+                    {"id": "events", "name": "Events", "pageFile": "page-events", "icon": "icon dripicons-view-list"},
+                    {"id": "reports", "name": "Reports", "pageFile": "page-reports-temp", "icon": "icon dripicons-inbox"},
+                    {"id": "map", "name": "Map", "pageFile": "page-map", "icon": "icon dripicons-map"}
+                ],
+                "owner": [
+                    {"id": "budget", "name": "Budget", "pageFile": "page-budget", "icon": "icon dripicons-wallet"}
+                    
+                ]
+            },
+            "pagesData": {
+                "assets": {                    
+                    "tables": [{
+                        "name": "REE",
+                        "icon": "icon dripicons-swap", 
+                        "signals": [
+                            {"name": "Active P. (MW)", "signalName": "ActivePower", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true,"showBar":true,"additionalInfo":"SetpointReceived"},
+                            {"name": "Reactive P. (MVAr)", "signalName": "ReactivePower", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true},
+                            {"name": "Voltage (kV)", "signalName": "VoltageR", "multiply": 1, "decimals": 2,
+                                 "nodeSumatory": false},     
+                            {"name": "Producible P. (MW)", "signalName": "ProduciblePower", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true},
+                            {"name": "H+1", "signalName": "H1Energy","multiply": 0.001, "decimals": 2, "nodeSumatory": true},
+                            {"name": "H+2", "signalName": "H2Energy", "multiply": 0.001,"decimals": 2, "nodeSumatory": true},
+                            {"name": "H+3", "signalName": "H3Energy", "multiply": 0.001,"decimals": 2, "nodeSumatory": true},
+                            {"name": "H+4", "signalName": "H4Energy", "multiply": 0.001,"decimals": 2, "nodeSumatory": true}
+                        ]
+                    },{
+                        "name": "Control",
+                        "icon": "icon dripicons-meter", 
+                        "signals": [
+                            {"name": "Active P. (MW)", "signalName": "ActivePower", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true,"showBar":true},
+                            {"name": "SP Received (MW)", "signalName": "SetpointReceived", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true,"excludeQualityStyle":true},
+                            {"name": "SP Order (MW)","signalName": "SetpointReceived", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": false,"needControlPrivilege":true, "inputSignal":true, "writeSignal":"SetpointRequest","units":"MW"},                                    
+                            {"name": "SP Applied (MW)", "signalName": "SetpointApplied", "multiply": 0.001, "decimals": 2,
+                                 "nodeSumatory": true,"excludeQualityStyle":true}
+                        ]
+                    },{
+                        "name": "Meteo",
+                        "icon": "icon dripicons-cloud", 
+                        "signals": [
+                                {"name": "Wind Speed (m/s)", "signalName": "WindSpeed", "decimals": 2, "nodeAverage": true},
+                                {"name": "Wind Direction (º)", "signalName": "WindDirection", "decimals": 0},
+                                {"name": "Temperature (ºC)", "signalName": "Temperature", "decimals": 1, "nodeAverage": true}
+                        ]
+                    }]
+                }
+            },
+            "map": {
+                "signals": [
+                    {"name": "Active P. (MW)", "signalName": "ActivePower", "decimals": 2,"multiply": 0.001},
+                    {"name": "Wind Speed (m/s)", "signalName": "WindSpeed", "decimals": 0},
+                    {"name": "SP Applied (MW)", "signalName": "SetpointApplied", "multiply": 0.001, "decimals": 2}
+                ]
+            }
+        },
+        "PARK_Aldehuelas": "default",
+        "PARK_Urano": "default",
+        "PARK_Juno": "default",
+        "PARK_Luna": "default",
+        "PARK_Grisel": "default",
+        "PARK_AcampoArmijo": "default",
+        "PARK_BosqueAlto": "default",
+        "PARK_LosLabrados": "default",
+        "PARK_PlanaDeLaBalsa": "default",
+        "PARK_PlanaDeMaria": "default",
+        "PARK_PlanaDeZaragoza": "default",
+        "PARK_Muel": "default",
+        "PARK_RioGallego": "default",
+        "PARK_Lanternoso": "default",
+        "PARK_Bancal": "default",
+        "PARK_LosSiglos": "default",
+        "HYDRO_Villalgordo": "default",
+        "HYDRO_Cepeda": "default",
+        "HYDRO_Chomba": "default",
+        "HYDRO_LaMora": "default",
+        "PARK_LaLoma": "default",
+        "SOLAR_Andasol3": "default"
+    },
+    "defaultView": {
+        "viewLevel": "ASSET",
+        "pages": {
+            "admin":[
+                {"id": "item-viewer", "name": "Item Viewer", "pageFile": "page-item-viewer", "icon": "icon dripicons-preview"}
+            ],
+            "maintainer": [
+                 {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"}
+            ],
+            "operator": [
+                {"id": "info", "name": "Info", "pageFile": "page-info", "icon": "icon dripicons-information"},
+                {"id": "control", "name": "Control", "pageFile": "page-control",  "icon": "icon dripicons-toggles"}                                           
+            ],
+            "owner": [
+            ]
+        },
+        "pagesData": {
+            "control": {
+                "productionGraph": {                    
+                    "graphSignals": [
+                        {"name": "Active Power", "signalName": "ActivePower", "multiply": 0.001, "units": "MW"},
+                        {"name": "SP. Applied", "signalName": "SetpointApplied", "multiply": 0.001, "units": "MW"},
+                        {"name": "Rated Power", "signalName": "NominalPower", "multiply": 0.001, "units": "MW"},
+                        {"name": "SP. REE", "signalName": "CECOELSetpointReceived", "multiply": 0.001, "units": "MW"},
+                        {"name": "WindSpeed", "yAxis": "right", "signalName": "WindSpeed", "units": "m/s"}                                                
+                    ]
+                },
+                "powerFactorGraph": {                    
+                    "graphSignals": [
+                        {"name": "Cos. phi", "signalName": "CosPhi", "drawPoints": true}
+                    ],
+                    "marks": [
+                        {"name": "Cos. phi Max", "value":0.98},
+                        {"name": "Cos. phi Min", "value": -0.98}
+                    ]
+                },
+                "writeSignals": [
+                ],
+                "displaySignals": [
+                    [
+                        {"name": "Setpoint Applied", "signalName": "SetpointApplied", "units": "kW"},
+                        {"name": "Setpoint Received", "signalName": "SetpointReceived", "units": "kW"},
+                        {"name": "Rated Active Power", "signalName": "NominalPower", "units": "kW"},
+                        {"name": "Active Power", "signalName": "ActivePower", "units": "kW"},
+                        {"name": "Reactive Power", "signalName": "ReactivePower", "units": "kVAr"},
+                        {"name": "Cos. phi", "signalName": "CosPhi", "decimals": 3}
+                    ],
+                    [
+                        {"name": "Wind Speed", "signalName": "WindSpeed", "decimals": 2, "units": "m/s"},
+                        {"name": "Wind Direction", "signalName": "WindDirection", "units": "º"},
+                        {"name": "Temperature", "signalName": "Temperature", "decimals": 1, "units": "ºC"}
+                    ]
+                ]
+            }
+        },
+        "servicesData":{
+            "deviceModel": {
+                "models": ["Gamesa"]
+            }
+        }
+    }
+}

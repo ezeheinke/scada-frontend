@@ -1,0 +1,305 @@
+/*#production-history .axis.y {
+    display: none;
+}*/
+
+/*#capacity-factor-history .axis.y {
+    display: none;
+}
+
+#availability-time-history .axis.y {
+    display: none;
+}*/
+
+#chart-active-power .axis {
+    display: none;
+}
+
+/*#map {
+  height: 600px;
+  margin-left: 10px;
+  border: 3px solid #ddd;
+}*/
+
+.info-chart.dc-chart {
+    float: none !important;
+}
+
+.info-chart {
+    border: none !important;
+}
+
+#login-main #login-block #login-header #logo {
+    height: 80px;
+}
+
+.input-wrapper { 
+    position: initial;
+}
+ 
+.availability-stacked-chart-colors g.stack._0  > rect.bar { /* available */
+    fill: #7ED321;
+}
+
+.availability-stacked-chart-colors g.stack._1  > rect.bar { /* maintenance */
+    fill: #F1C40F;
+}
+
+.availability-stacked-chart-colors g.stack._2  > rect.bar { /* manualStop */
+    fill: #F39C12;
+}
+
+.availability-stacked-chart-colors g.stack._3  > rect.bar { /* error */
+    fill: #E74C3C;
+}
+
+.availability-stacked-chart-colors g.stack._4  > rect.bar { /* disconnected */
+    fill: #999999;
+}
+
+.availability-available {
+    color: #7ED321 !important;
+    border-color: #7ED321 !important;
+} 
+.availability-stopped,
+.availability-regulation {
+    color: #F39C12 !important;
+    border-color: #F39C12 !important;
+} 
+.availability-maintenance {
+    color: #F1C40F !important;
+    border-color: #F1C40F !important;
+} 
+.availability-error {
+    color: #E74C3C !important;
+    border-color: #E74C3C !important;
+} 
+.availability-disconnected {
+    color: #999 !important;
+    border-color: #999 !important;
+}
+
+.editable {
+    cursor: pointer;
+}
+
+/* Background for asset-table */
+/*.background-regulation {    
+    background-color: #FCCC66 !important;
+}
+
+.background-disconnected {    
+    background-color: #CBCACC !important;
+}*/
+
+/* Vis styles for external legends */
+path.custom-style3.fill {
+    fill-opacity:0.5 !important;
+    stroke: none;
+}
+.vis-graph-group0 {
+    fill:#4f81bd;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #4f81bd;
+}
+.vis-graph-group1 {
+    fill:#f79646;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #f79646;
+}
+.vis-graph-group2 {
+    fill: #8c51cf;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #8c51cf;
+}
+.vis-graph-group3 {
+    fill: #75c841;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #75c841;
+}
+.vis-graph-group4 {
+    fill: #ff0100;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #ff0100;
+}
+.vis-graph-group5 {
+    fill: #37d8e6;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #37d8e6;
+}
+.vis-graph-group6 {
+    fill: #042662;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #042662;
+}
+.vis-graph-group7 {
+    fill:#00ff26;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #00ff26;
+}
+.vis-graph-group8 {
+    fill:#ff00ff;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #ff00ff;
+}
+.vis-graph-group9 {
+    fill: #8f3938;
+    fill-opacity:0;
+    stroke-width:2px;
+    stroke: #8f3938;
+}
+.vis-fill {
+    fill-opacity:0.1;
+    stroke: none;
+}
+.vis-bar {
+    fill-opacity:0.5;
+    stroke-width:1px;
+}
+.vis-point {
+    stroke-width:2px;
+    fill-opacity:1.0;
+}
+.vis-legend-background {
+    stroke-width:1px;
+    fill-opacity:0.9;
+    fill: #ffffff;
+    stroke: #c2c2c2;
+}
+.vis-outline {
+    stroke-width:1px;
+    fill-opacity:1;
+    fill: #ffffff;
+    stroke: #e5e5e5;
+}
+.vis-icon-fill {
+    fill-opacity:0.3;
+    stroke: none;
+}
+div.description-container {
+    float:left;
+    height: 31px;
+    padding-left:5px;
+    padding-right:5px;
+    line-height: 30px;
+}
+div.icon-container {
+    float:left;
+    border: 0px solid transparent;
+}
+div.legend-element-container {
+    display:inline-block;
+    height:30px;
+    margin:0px;
+    padding:4px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div.legend-element-container.hidden {
+    background-color: #d3e6ff;
+}
+svg.legend-icon {
+    width: 20px;
+    height: 20px;
+}
+div.external-legend {
+    position:relative;
+    margin-left: 10px;
+}
+
+/* Cannot modify visjs height :/ */
+
+#details #page-view .row-with-divider .info-item .info-chart.info-chart-large {
+    height: 437px;
+}
+
+/* Display a pointer */
+.clickable {
+    cursor: pointer;
+}
+
+/* Decorate parents table */
+.childs-table .child-row {
+    background-color: #F9F9F9;
+}
+
+.childs-table thead tr {
+    background-color: #4C7DBE;
+    color: white;
+}
+
+/* Asset table selector */
+#tableSelector button {
+    border-radius: 0;
+}
+
+/* Asset table type icon */
+.type-icon {
+    width: 15px;
+    max-height: 15px;
+    margin-right: 10px;
+}
+
+/* Notifications */
+.notification-flag {
+    position: absolute;
+    font-size: 12px;
+    margin-top: 28px;
+    margin-left: 12px;
+}
+
+.notification-flag.important {
+    color: #FF5060;
+}
+
+.notification-flag.not-important {
+    color: #4C7DBE;
+}
+
+/* Events Table */
+/*#events-table thead tr {
+    background-color: #4C7DBE;
+    color: white;
+}*/
+
+#chart-events-source .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-23deg);
+}
+
+#chart-yearly-production .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-23deg);
+}
+
+#chart-yearly-income-tab .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-23deg);
+}
+
+#chart-yearly-production-tab .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-23deg);
+}
+
+#chart-yearly-penalties-tab .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-23deg);
+} 
+
+#chart-events-type {
+  float: none;
+  text-align: center;
+}

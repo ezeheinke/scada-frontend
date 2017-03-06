@@ -1,0 +1,362 @@
+[
+    {
+        "date": "12/06/2016 10:00:00",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:00:10",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:00:20",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:00:30",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:00:40",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:00:50",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:01:00",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:01:10",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:01:20",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:01:30",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:01:40",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:01:50",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:02:00",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:02:10",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:02:20",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:02:30",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:02:40",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:02:50",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:03:00",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:03:10",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:03:20",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:03:30",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:03:40",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:03:50",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:04:00",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:04:10",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:04:20",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:04:30",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:04:40",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:04:50",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:05:00",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:05:10",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:05:20",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:05:30",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:05:40",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    },
+    {
+        "date": "12/06/2016 10:05:50",
+        "cosPhi": 1.08,
+        "maxCosPhi": 1.42,
+        "minCosPhi": 0.76,
+        "activePower": 100,
+        "nominalPower": 120,
+        "setPointReceived": 60,
+        "wind": 12
+    }
+]

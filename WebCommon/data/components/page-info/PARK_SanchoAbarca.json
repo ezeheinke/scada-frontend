@@ -1,0 +1,34 @@
+{
+    "images":["IMG_SanchoAbarca1.jpg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PE SanchoAbarca",
+                    "Power Rate": "10.200 kW",
+                    "Elements": "4 turbines Vestas V90/1800 (1.800 kW, diameter 90m), 1 turbine Vestas V90/3000 (3.000kw, diameter 90m)",
+                    "Grid Connection": "SET PE Sancho Abarca",
+                    "Year": "2010"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "SET Tauste",
+                    "Zone": "Tauste (Zaragoza)",
+                    "Voltage (kV)": "66 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M - ELECTRICAL WTG": {
+                    "Urbano Moya (649318958)": "sinergiaom@jorgesl.com",
+                    "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }        
+    }
+}

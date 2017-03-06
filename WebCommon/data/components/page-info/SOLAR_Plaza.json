@@ -1,0 +1,34 @@
+{
+    "images":["IMG_Plaza1.jpg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PS Plaza",
+                    "Power Rate": "1.300 kW",
+                    "Elements": "2 inverters BONFIGLIOLI RPS TL 300V 0760, 1 inverters BONFIGLIOLI RPS TL 270V 0340",
+                    "Grid Connection": "Centro Seccionamiento Cubierta Fotovoltaica PLAZA",
+                    "Technology": "Fixed",
+                    "Year": "2013"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "Center C9 of SET Logística",
+                    "Zone": "Zaragoza",
+                    "Voltage (kV)": "15 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M": {
+                    "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }        
+    }
+}

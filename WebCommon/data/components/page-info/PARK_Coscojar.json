@@ -1,0 +1,34 @@
+{
+    "images":["IMG_Coscojar1.jpg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PE Coscojar",
+                    "Power Rate": "15.000 kW",
+                    "Elements": "25 turbines Model Nordex N43 (600kW, diameter 43m)",
+                    "Grid Connection": "SET PE El Coscojar",
+                    "Year": "1999"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "SET Jalón",
+                    "Zone": "Plasencia de Jalón (Zaragoza)",
+                    "Voltage (kV)": "20 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M - ELECTRICAL WTG": {
+                    "Urbano Moya (649318958)": "sinergiaom@jorgesl.com",
+                    "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }        
+    }
+}

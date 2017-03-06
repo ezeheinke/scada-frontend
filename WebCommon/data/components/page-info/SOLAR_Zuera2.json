@@ -1,0 +1,35 @@
+{
+    "images":["IMG_Zuera21.jpg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PS Zuera 2",
+                    "Power Rate": "9.900 kW",
+                    "Elements": "9 inverters SCHNEIDER Xantrex GT550E",
+                    "Grid Connection": "SET Zuera Solar",
+                    "Technology": "1 Axis",
+                    "Year": "2013"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "SET \"Zuera Oeste\"",
+                    "Zone": "Zuera (Zaragoza)",
+                    "Voltage (kV)": "45 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M": {
+                    "Luciano Ramiro (682743510)": "sinergiaom.zuera@jorgesl.com",
+                    "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }        
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "images":["IMG_Vinaceite1.jpg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PS Vinaceite",
+                    "Power Rate": "8.000 kW",
+                    "Elements": "120 inverters SAFT Protect PV33",
+                    "Grid Connection": "SET Vinaceite Solar",
+                    "Technology": "2 Axes",
+                    "Year": "2008"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "Centro Seccionamiento Vinaceite 45kV",
+                    "Zone": "Vinaceite (Teruel)",
+                    "Voltage (kV)": "45 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M": {
+                    "Juan Carlos (638616638)": "sinergiaom.vinaceite@jorgesl.com",
+                    "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }        
+    }
+}

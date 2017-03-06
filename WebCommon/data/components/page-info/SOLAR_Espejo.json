@@ -1,0 +1,36 @@
+{
+    "images":["IMG_Espejo1.jpg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PS Espejo",
+                    "Power Rate": "1.900 kW",
+                    "Elements": "18 inverters SunnyCentral (100kW), 3 inverters Ingecon (25kW)",
+                    "Grid Connection": "SET PS Espejo",
+                    "Technology": "1 Axis",
+                    "Year": "2010"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "N/A",
+                    "Zone": "Espejo (Córdoba)",
+                    "Voltage (kV)": "20 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M": {
+                "Pedro Tomé (600930062)": "ptome@abantia.com",
+                "Bernardo Bustos (600930578)": "bbustos@abantia.com",
+                "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }        
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "generate-doc",
+  "description": "Generating doc",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "gulp": "*",
+    "gulp-markdown": "*",
+    "through2": "*"
+  }
+}

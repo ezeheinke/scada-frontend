@@ -1,0 +1,35 @@
+{
+    "images":["IMG_Plasencia1.jpeg"],
+    "rolesInfo": {
+        "maintainer": "default",
+        "operator": "default",
+        "owner": "default",
+        "default": {
+            "left": {
+                "ASSET INFO": {
+                    "Asset": "PS Plasencia",
+                    "Power Rate": "4.000 kW",
+                    "Elements": "4 inverters SIEMENS Sinvert Solar 1000MS TL",
+                    "Grid Connection": "Centro seccionamiento PSF Plasencia",
+                    "Technology": "Fixed",
+                    "Year": "2010"
+                },
+                "GRID INFO Distribution": {
+                    "Node Distribution Grid": "SET \"El Pradillo\"",
+                    "Zone": "Plasencia de Jalón (Zaragoza)",
+                    "Voltage (kV)": "15 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                "TSO Control Rooms": "N/A",
+                "Control Center": "N/A"
+            },
+                "O&M": {
+                    "Urbano Moya (649318958)": "sinergiaom@jorgesl.com",
+                    "Luis M Alquézar (669450396)": "luismanuelalquezar@jorgesl.com"
+                }
+            }
+        }
+    }
+}

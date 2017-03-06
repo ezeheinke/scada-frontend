@@ -1,0 +1,38 @@
+{
+    "roles": {
+        "maintainer": {
+            "left": {
+                "ASSET INFO": {
+                    "ASSET": "PE La Jarreta",
+                    "POWER RATE": "50.000 kW",
+                    "ELEMENTS": "25 turbinas eólicas : Gamesa G87/2000 (potencia 2 000 kW, diámetro 87 m)",
+                    "GRID CONNECTION": "N/A"
+                },
+                "GRID INFO": {
+                    "NODE DISTRIBUTION GRID": "SET P.E. La Jarreta",
+                    "ZONE": "SET Olmedilla",
+                    "VOLTAGE (KV)": "132 kV"
+                }
+            },
+            "right": {
+                "OPERATIONAL INFO": {
+                    "TSO CONTROL ROOMS": [
+                        "<b>Centro de Gestión de la Energía</b>",
+                        "T +34 914 184 440 / Ext. 14440",
+                        "T +34 914 184 418 / Ext. 14418",
+                        "M +34 618 600 304",
+                        "T +34 91 418 16888 / 16854 / 16860 / 14428",
+                        "M +34 618 679 956 / 609 142 104 / 609 284 378 / 608 000 785",
+                        "utr.cge@viesgo.com",
+                        "ump.cge@viesgo.com"
+                    ],
+                    "OM - ELECTRICAL WTG": [
+                        "David Sequi (609 835 836)"
+                    ]
+                }
+            }
+        },
+        "operator": "maintainer",
+        "owner": "maintainer"
+    }
+}
